@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="protect.card_locker.MainActivity"
+    tools:context="com.ziadoua.zcard.MainActivity"
     tools:showIn="@layout/main_activity">
 
     <LinearLayout
@@ -13,14 +13,17 @@
         android:id="@+id/helpSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
 
         <ImageView
+            android:importantForAccessibility="no"
+            android:layout_marginVertical="20dp"
             android:id="@+id/welcome_icon"
             android:layout_width="match_parent"
             android:layout_height="184dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/ic_launcher_flat" />
 
         <TextView
             android:id="@+id/welcome_text"
@@ -59,6 +62,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"

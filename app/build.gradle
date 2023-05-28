@@ -16,7 +16,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "me.hackerchick.catima"
+        applicationId "com.ziadoua.zcard"
         minSdk 21
         targetSdk 33
         versionCode 120
@@ -30,11 +30,11 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "app_name", "Catima"
+            resValue "string", "app_name", "zCard"
         }
         debug {
             applicationIdSuffix ".debug"
-            resValue "string", "app_name", "Catima Debug"
+            resValue "string", "app_name", "zCard Debug"
         }
     }
 
@@ -80,7 +80,7 @@ android {
     lint {
         lintConfig file('lint.xml')
     }
-    namespace 'protect.card_locker'
+    namespace 'com.ziadoua.zcard'
 }
 
 dependencies {

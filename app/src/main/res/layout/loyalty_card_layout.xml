@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/materialCardViewFilledStyle"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/row"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -133,6 +135,7 @@
             android:id="@+id/note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="4dp"
@@ -149,19 +152,23 @@
         <View
             android:id="@+id/info_divider"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="8dp"
-            android:background="?android:attr/dividerVertical"
+            android:layout_height="0dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintDimensionRatio="H,184.4:9.01"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/separator"
+            android:backgroundTint="?attr/colorOnSurfaceVariant"
             android:visibility="gone"
-            tools:visibility="visible"
-            app:layout_constraintTop_toBottomOf="@+id/note"
             app:layout_constraintBottom_toTopOf="@+id/balance"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note"
+            tools:visibility="visible" />
 
         <TextView
+            android:gravity="center_vertical"
             android:id="@+id/balance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,6 +188,7 @@
             tools:text="525 points"/>
 
         <TextView
+            android:gravity="center_vertical"
             android:id="@+id/validFrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -200,6 +208,7 @@
             tools:text="Today"/>
 
         <TextView
+            android:gravity="center_vertical"
             android:id="@+id/expiry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

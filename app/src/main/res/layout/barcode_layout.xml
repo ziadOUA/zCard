@@ -16,7 +16,7 @@
         android:id="@+id/barcodeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10.0dip"
+        android:layout_marginTop="10dip"
         android:gravity="center"
         android:textSize="@dimen/text_size_medium"
         android:textStyle="bold"

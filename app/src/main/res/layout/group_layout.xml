@@ -8,67 +8,72 @@
     android:gravity="center_vertical"
     android:baselineAligned="false"
     android:padding="@dimen/activity_margin">
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
+            android:layout_marginBottom="6dp"
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="@dimen/storeNameTextSize"
-            android:textStyle="bold"/>
-
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/cardCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:maxLines="1"
             android:ellipsize="end"
-            android:textSize="@dimen/noteTextSize"/>
+            android:maxLines="1"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="@dimen/noteTextSize" />
     </LinearLayout>
-
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageButton
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+        <Button
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledStyle"
             android:id="@+id/moveUp"
-            android:layout_width="@dimen/cardThumbnailSize"
-            android:layout_height="@dimen/cardThumbnailSize"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24"
-            android:contentDescription="@string/moveUp"/>
-
-        <ImageButton
+            android:layout_width="@dimen/groupManageButtonSize"
+            android:layout_height="@dimen/groupManageButtonSize"
+            android:contentDescription="@string/moveUp"
+            app:icon="@drawable/ic_baseline_arrow_drop_up_24"
+            app:tint="?attr/colorOnPrimary" />
+        <Button
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledStyle"
             android:id="@+id/moveDown"
-            android:layout_width="@dimen/cardThumbnailSize"
-            android:layout_height="@dimen/cardThumbnailSize"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24"
-            android:contentDescription="@string/moveDown"/>
-
-        <ImageButton
+            android:layout_width="@dimen/groupManageButtonSize"
+            android:layout_height="@dimen/groupManageButtonSize"
+            android:contentDescription="@string/moveDown"
+            app:icon="@drawable/ic_baseline_arrow_drop_down_24"
+            app:tint="?attr/colorOnPrimary" />
+        <Button
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledTonalStyle"
             android:id="@+id/edit"
-            android:layout_width="@dimen/cardThumbnailSize"
-            android:layout_height="@dimen/cardThumbnailSize"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_mode_edit_white_24dp"
-            android:contentDescription="@string/edit"/>
-
-        <ImageButton
+            android:layout_width="@dimen/groupManageButtonSize"
+            android:layout_height="@dimen/groupManageButtonSize"
+            android:contentDescription="@string/edit"
+            app:icon="@drawable/ic_mode_edit_white_24dp"
+            app:tint="?attr/colorOnPrimaryContainer" />
+        <Button
+            style="?attr/materialIconButtonFilledTonalStyle"
+            app:iconGravity="textStart"
             android:id="@+id/delete"
-            android:layout_width="@dimen/cardThumbnailSize"
-            android:layout_height="@dimen/cardThumbnailSize"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_delete_white_24dp"
-            android:contentDescription="@string/delete"/>
-
+            android:layout_width="@dimen/groupManageButtonSize"
+            android:layout_height="@dimen/groupManageButtonSize"
+            android:contentDescription="@string/delete"
+            app:icon="@drawable/ic_delete_white_24dp"
+            app:tint="?attr/colorOnPrimaryContainer" />
     </LinearLayout>
-
 </LinearLayout>

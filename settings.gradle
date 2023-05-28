@@ -22,5 +22,5 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "Catima"
+rootProject.name = "zCard"
 include ':app'

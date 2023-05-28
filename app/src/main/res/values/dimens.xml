@@ -1,4 +1,5 @@
 <resources>
+    <dimen name="groupManageButtonSize">52dp</dimen>
     <dimen name="no_data_textSize">16sp</dimen>
     <dimen name="no_data_padding">22dp</dimen>
 
@@ -14,7 +15,7 @@
     <dimen name="inputPadding">10dip</dimen>
     <dimen name="inputSize">18sp</dimen>
 
-    <dimen name="cardThumbnailSize">46dp</dimen>
+    <dimen name="cardThumbnailSize">54dp</dimen>
     <dimen name="cardThumbnailEditOverlaySize">21dp</dimen>
 
     <dimen name="activity_margin">16dp</dimen>
