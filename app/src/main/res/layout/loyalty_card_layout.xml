@@ -73,8 +73,8 @@
 
                 <ImageView
                     android:id="@+id/star_background"
-                    android:layout_width="@dimen/cardThumbnailSize"
-                    android:layout_height="@dimen/cardThumbnailSize"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="end"
                     android:alpha="0.5"
                     android:contentDescription="@string/starred"
@@ -83,21 +83,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_starred_white"
-                    tools:ignore="ImageContrastCheck" />
-
-                <ImageView
-                    android:importantForAccessibility="no"
-                    android:id="@+id/star_border"
-                    android:layout_width="@dimen/cardThumbnailSize"
-                    android:layout_height="@dimen/cardThumbnailSize"
-                    android:layout_gravity="end"
-                    android:alpha="0.5"
-                    android:contentDescription="@string/starImage"
-                    android:elevation="4dp"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_unstarred_black"
                     tools:ignore="ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -138,7 +123,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:textAppearance="?attr/textAppearanceBody2"
             android:textColor="?android:attr/textColorSecondary"
             android:visibility="gone"
@@ -156,7 +141,7 @@
             android:layout_marginStart="50dp"
             app:layout_constraintDimensionRatio="H,184.4:9.01"
             android:layout_marginEnd="50dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/separator"
             android:backgroundTint="?attr/colorOnSurfaceVariant"
@@ -214,7 +199,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:textAppearance="?attr/textAppearanceBody2"
             android:textColor="?android:attr/textColorSecondary"
             app:drawableLeftCompat="@drawable/ic_baseline_access_time_24"

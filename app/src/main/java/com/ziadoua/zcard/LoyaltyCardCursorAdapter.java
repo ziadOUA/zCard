@@ -219,7 +219,7 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
     public class LoyaltyCardListItemViewHolder extends RecyclerView.ViewHolder {
 
         public TextView mCardText, mNoteField, mBalanceField, mValidFromField, mExpiryField;
-        public ImageView mCardIcon, mStarBackground, mStarBorder, mTickIcon, mArchivedBackground;
+        public ImageView mCardIcon, mStarBackground, mTickIcon, mArchivedBackground;
         public MaterialCardView mRow;
         public ConstraintLayout mStar, mArchived;
         public View mDivider;
@@ -239,7 +239,6 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
             mCardText = loyaltyCardLayoutBinding.thumbnailText;
             mStar = loyaltyCardLayoutBinding.star;
             mStarBackground = loyaltyCardLayoutBinding.starBackground;
-            mStarBorder = loyaltyCardLayoutBinding.starBorder;
             mArchived = loyaltyCardLayoutBinding.archivedIcon;
             mArchivedBackground = loyaltyCardLayoutBinding.archiveBackground;
             mTickIcon = loyaltyCardLayoutBinding.selectedThumbnail;
@@ -306,11 +305,9 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
             }
 
             if (dark) {
-                mStarBorder.setImageResource(R.drawable.ic_unstarred_white);
                 mStarBackground.setImageResource(R.drawable.ic_starred_black);
                 mArchivedBackground.setImageResource(R.drawable.ic_baseline_archive_24_black);
             } else {
-                mStarBorder.setImageResource(R.drawable.ic_unstarred_black);
                 mStarBackground.setImageResource(R.drawable.ic_starred_white);
                 mArchivedBackground.setImageResource(R.drawable.ic_baseline_archive_24);
             }
@@ -327,7 +324,6 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
                 mArchived.setVisibility(View.GONE);
             }
 
-            mStarBorder.invalidate();
             mStarBackground.invalidate();
             mArchivedBackground.invalidate();
 
