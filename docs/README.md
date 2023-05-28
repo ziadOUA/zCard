@@ -1,31 +1,43 @@
-# Catima
+<img src="https://i.postimg.cc/15kk9yCd/ZCARD.png">
 
-Copylefted libre software (GPLv3+) card management app.
+<h1 align="center">zCard</h1>
 
-[![GitHub Version](https://img.shields.io/github/v/release/TheLastProject/Catima.svg?logo=github&label=GitHub)](https://github.com/TheLastProject/Catima/releases)
-[![F-Droid Version](https://img.shields.io/f-droid/v/me.hackerchick.catima.svg?logo=f-droid&label=F-Droid)](https://f-droid.org/packages/me.hackerchick.catima/)
-[![IzzyOnDroid Version](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/me.hackerchick.catima)](https://apt.izzysoft.de/fdroid/index/apk/me.hackerchick.catima)
-[![Google Play Store Version](https://img.shields.io/endpoint?color=blue&logo=google-play&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dme.hackerchick.catima%26l%3DGoogle%2520Play%26m%3D%24version)](https://play.google.com/store/apps/details?id=me.hackerchick.catima)
+<div align="center">
+  <p>A simple and beautiful app that stores loyalty, membership and gift cards, instead of carrying them around.</p>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Android/android2.svg">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java2.svg">
+</div>
 
-![Android CI](https://github.com/TheLastProject/Catima/workflows/Android%20CI/badge.svg)
-[![Translation status](https://hosted.weblate.org/widgets/catima/-/svg-badge.svg)](https://hosted.weblate.org/engage/catima/)
+# Screenshots
 
-<a href="https://f-droid.org/repository/browse/?fdid=me.hackerchick.catima" target="_blank">
-<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
-<a href="https://apt.izzysoft.de/fdroid/index/apk/me.hackerchick.catima" target="_blank">
-<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="90"/></a>
+## Light theme
 
-<a href="https://play.google.com/store/apps/details?id=me.hackerchick.catima" target="_blank">
-<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90"/></a>
+<div>
+  <img src="https://i.postimg.cc/Hsz6NdG5/screenshot-light1.png" width="200">
+  <img src="https://i.postimg.cc/yNgnWRDX/screenshot-light2.png" width="200">
+  <img src="https://i.postimg.cc/k4WcvdF2/screenshot-light3.png" width="200">
+  <img src="https://i.postimg.cc/R0kdt0fr/screenshot-light4.png" width="200">
+</div>
 
-![Logo](https://github.com/TheLastProject/Catima/raw/main/app/src/main/ic_launcher-playstore.png)
+## Dark theme
 
-*Logo by [Rose (TangentFoxy)](http://github.com/TangentFoxy)*
+<div>
+  <img src="https://i.postimg.cc/J0cpMWGf/screeshot-dark1.png" width="200">
+  <img src="https://i.postimg.cc/bYQCQ13m/screeshot-dark2.png" width="200">
+  <img src="https://i.postimg.cc/CLSvJd2S/screeshot-dark3.png" width="200">
+  <img src="https://i.postimg.cc/t4gBQwyc/screeshot-dark4.png" width="200">
+</div>
 
-Stores your store loyalty and membership cards on your device, instead of having to carry them around.
+## Material You
 
-Supported barcodes:
+<div>
+  <img src="https://i.postimg.cc/vTztCLKM/screenshot-light5.png" width="200">
+  <img src="https://i.postimg.cc/x1Ft0511/screenshot-dark5.png" width="200">
+</div>
 
+# More informations
+
+Supported barcodes :
 - AZTEC
 - CODABAR
 - CODE_39
@@ -40,42 +52,19 @@ Supported barcodes:
 - UPC_A
 - UPC_E
 
-# Screenshots
-
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-01.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-01.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-02.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-02.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-03.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-03.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-04.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-04.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-05.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-05.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-06.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-06.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-07.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-07.png)
-[<img src="https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-08.png" width=250>](https://github.com/TheLastProject/Catima/raw/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot-08.png)
-
 # Moving data from other apps
 
-Within the app you can import cards and codes from files, Catima, FidMe, Loyalty Card Keychain, Voucher Vault, and Stocard.
+Within the app you can import cards and codes from files, zCard, Catima, FidMe, Loyalty Card Keychain, Voucher Vault, and Stocard.
 For FidMe you need to select the barcode type for each entry afterwards.
 
-# Building
+<p align="center">  
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://i.postimg.cc/KzPKjBNn/footer-Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://i.postimg.cc/C5wRq5P9/footer-Light.png">
+    <img alt="Footer" src="https://i.postimg.cc/KzPKjBNn/footer-Dark.png">
+  </picture>
+</p>
 
-Building can either be done through Android Studio (not reproducible!) or the build.sh script in this repository (reproducibly with Java 11, same way F-Droid builds it). This script can also sign the build.
-
-Build without signing:
-```
-./build.sh
-```
-
-Build with signing:
-```
-KEYSTORE=/path/to/keystore KEYSTORE_ALIAS=catima ./build.sh
-```
-
-# Translating
-
-[![Translation status](https://hosted.weblate.org/widgets/catima/-/open-graph.png)](https://hosted.weblate.org/engage/catima/)
-
-Help translate the app to your language from [our Hosted Weblate page](https://hosted.weblate.org/projects/catima/).
-
-# Developer Note
-
-This app is based on the great (but no longer developed) [Loyalty Card Keychain](https://github.com/brarcher/loyalty-card-locker) by [Branden Archer](https://github.com/brarcher).
+<p align="center">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceGPLv3/licencepglv32.svg">
+</p>
