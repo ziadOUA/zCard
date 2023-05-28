@@ -114,7 +114,8 @@
     <string name="app_license">GPLv3+ altında lisanslanan copyleft özgür yazılım</string>
     <string name="app_copyright_old">Loyalty Card Keychain temel alınmıştır
 \nTelif Hakkı © 2016–2020 Branden Archer</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Telif Hakkı © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Telif Hakkı © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Telif Hakkı © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="about">Hakkında</string>
     <string name="importOptionApplicationButton">Başka bir uygulama kullan</string>
     <string name="importOptionApplicationExplanation">Bir dosyayı açmak için herhangi bir uygulamayı veya en sevdiğiniz dosya yöneticisini kullanın.</string>
@@ -243,7 +244,7 @@
         <item quantity="one">Arşivi görüntüle (<xliff:g>%1$d</xliff:g> kart)</item>
         <item quantity="other">Arşivi görüntüle (<xliff:g>%1$d</xliff:g> kart)</item>
     </plurals>
-    <string name="welcome">Catima\'ya Hoş Geldiniz</string>
+    <string name="welcome">zCard\'ya Hoş Geldiniz</string>
     <string name="failedToRetrieveImageFile">Resim dosyası alınamadı</string>
     <string name="barcodeLongPressMessage">Galeri uygulamasında yalnızca resimler açılabilir</string>
     <string name="noCameraPermissionDirectToSystemSetting">Barkodları taramak için Catima\'nın kameranıza erişmesi gerekecektir. İzin ayarlarınızı değiştirmek için buraya dokunun.</string>

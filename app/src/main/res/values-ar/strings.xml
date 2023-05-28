@@ -248,7 +248,8 @@
     <string name="sort_by_expiry">انقضاء</string>
     <string name="noUnarchivedCardsMessage">لا توجد بطاقات غير مؤرشفة موجودة</string>
     <string name="importLoyaltyCardKeychain">الاستيراد من Loyalty Card Keychain</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="importLoyaltyCardKeychainMessage">حدد ملفك <i>LoyaltyCardKeychain.csv</i> التصدير من Loyalty Card Keychain للاستيراد.
 \nقم بإنشائه من قائمة الاستيراد / التصدير في Loyalty Card Keychain بالضغط على تصدير هناك أولاً.</string>
     <string name="importStocard">الاستيراد من Stocard</string>
@@ -265,7 +266,7 @@
     <string name="failedToRetrieveImageFile">فشل في استخراج ملف الصورة</string>
     <string name="barcodeLongPressMessage">يمكن فتح صور فقط في تطبيق معرض الصور</string>
     <string name="failedToOpenUrl">ثبت متصفح ويب أولاً</string>
-    <string name="welcome">مرحبا بك في كاتيما</string>
+    <string name="welcome">مرحبا بك في زيكارد</string>
     <string name="updateBalanceTitle">كم أنفقت؟</string>
     <string name="currentBalanceSentence">الرصيد الحالي: <xliff:g> %s </xliff:g></string>
     <plurals name="viewArchivedCardsWithCount">

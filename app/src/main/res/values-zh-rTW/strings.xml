@@ -163,7 +163,8 @@
     <string name="importOptionApplicationTitle">使用其他應用程式</string>
     <string name="importOptionApplicationButton">使用其他應用程式</string>
     <string name="importOptionApplicationExplanation">使用任何應用程式選擇您所想要匯入的檔案。</string>
-    <string name="app_copyright_fmt">著作權所有 © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt">著作權所有 © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt">著作權所有 © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="importVoucherVault">自 Voucher Vault 中匯入</string>
     <string name="importVoucherVaultMessage">選取您自 Voucher Vault 匯出的 <i>vouchervault.json</i> 檔案以進行匯入。
 \n請您先透過 Voucher Vault 進行匯出。</string>
@@ -233,7 +234,7 @@
     <string name="previousCard">上一張</string>
     <string name="noUnarchivedCardsMessage">沒有已封存的卡片</string>
     <string name="nextCard">下一張</string>
-    <string name="welcome">歡迎使用 Catima</string>
+    <string name="welcome">歡迎使用 zCard</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="other">檢視封存 (<xliff:g>%1$d</xliff:g> 張卡片)</item>
     </plurals>

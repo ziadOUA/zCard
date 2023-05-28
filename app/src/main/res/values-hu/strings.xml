@@ -86,7 +86,8 @@
     <string name="importOptionFilesystemButton">A fájlrendszerből</string>
     <string name="importOptionApplicationTitle">Másik alkalmazás használata</string>
     <string name="importOptionApplicationExplanation">A fájl megnyitásához használjon egy tetszőleges alkalmazást, vagy a kedvenc fájlkezelőjét.</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="app_license">Copyleft licencű szabad szoftver, GPLv3+ alatt közzétéve</string>
     <string name="about_title_fmt">A <xliff:g id="app_name">%s</xliff:g> névjegye</string>
     <string name="debug_version_fmt">Verzió: <xliff:g id="version">%s</xliff:g></string>
@@ -247,7 +248,7 @@
     <string name="failedToRetrieveImageFile">Nem sikerült lekérni a képfájlt</string>
     <string name="barcodeLongPressMessage">Csak képek nyithatók meg a galéria alkalmazásban</string>
     <string name="unarchived">Kártya archiválása megszüntetve</string>
-    <string name="welcome">Üdvözöljük a Catimában</string>
+    <string name="welcome">Üdvözöljük a zCardban</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="one">Archívum megtekintése (<xliff:g>%1$d</xliff:g> kártya)</item>
         <item quantity="other">Archívum megtekintése (<xliff:g>%1$d</xliff:g> kártya)</item>

@@ -130,7 +130,8 @@
     <string name="wrongValueForBarcodeType">Il valore non è valido per il tipo di codice a barre selezionato</string>
     <string name="app_resources">Risorse libere di terze parti: <xliff:g id="app_resources_list"> %s </xliff:g></string>
     <string name="app_libraries">Librerie libere di terze parti: <xliff:g id="app_libraries_list"> %s </xliff:g></string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="intent_import_card_from_url_share_multiple_text">Voglio condividere alcune carte con te</string>
     <string name="copy_to_clipboard_multiple_toast">Codici copiati negli appunti</string>
     <string name="card_ids_copied">Codice/i copiato/i</string>
@@ -244,7 +245,7 @@
     </plurals>
     <string name="previousCard">Precedente</string>
     <string name="nextCard">Successivo</string>
-    <string name="welcome">Benvenuti su Catima</string>
+    <string name="welcome">Benvenuti su zCard</string>
     <string name="failedToOpenUrl">Installa prima un browser web</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="one">Visualizza archivio (<xliff:g>%1$d</xliff:g> scheda)</item>

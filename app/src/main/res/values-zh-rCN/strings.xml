@@ -10,7 +10,8 @@
     <string name="card">卡片</string>
     <string name="addManually">手动输入卡号</string>
     <string name="settings_system_theme">系统设置</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">版权所有 © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">版权所有 © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">版权所有 © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="importOptionApplicationButton">使用其他应用</string>
     <string name="importOptionFilesystemButton">从文件系统</string>
     <string name="unstar">从收藏中删除</string>
@@ -235,7 +236,7 @@
     <string name="archiveList">已归档卡</string>
     <string name="noUnarchivedCardsMessage">没有未归档卡</string>
     <string name="failedToOpenUrl">先安装一个浏览器</string>
-    <string name="welcome">欢迎使用Catima</string>
+    <string name="welcome">欢迎使用 zCard</string>
     <string name="updateBalanceHint">输入金额</string>
     <string name="importCards">导入卡</string>
     <plurals name="viewArchivedCardsWithCount">

@@ -129,7 +129,8 @@
     <string name="wrongValueForBarcodeType">Deze waarde komt niet overeen met het gekozen barcodetype</string>
     <string name="app_resources">Vrije externe bronnen: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Vrije externe bibliotheken: <xliff:g id="app_libraries_list">%s</xliff:g></string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Auteursrecht © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Auteursrecht © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Auteursrecht © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="intent_import_card_from_url_share_multiple_text">Ik wil kaarten met je delen</string>
     <string name="copy_to_clipboard_multiple_toast">De kaart-id\'s zijn gekopieerd naar het klembord</string>
     <string name="card_ids_copied">De kaart-id‘s zijn gekopieerd</string>
@@ -238,7 +239,7 @@
     </plurals>
     <string name="previousCard">Vorige</string>
     <string name="nextCard">Volgende</string>
-    <string name="welcome">Welkom bij Catima</string>
+    <string name="welcome">Welkom bij zCard</string>
     <string name="failedToOpenUrl">Installeer een webbrowser</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="one">Archief bekijken (<xliff:g>%1$d</xliff:g> kaart)</item>

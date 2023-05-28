@@ -130,7 +130,8 @@
     <string name="app_resources">Frie tredjepartsressurser: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Frie tredjepartsbibliotek: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="card_ids_copied">Kopierte ID(er)</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Opphavsrett © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Opphavsrett © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Opphavsrett © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="updateBarcodeQuestionText">Du har endret ID-en. Ønsker du å også oppdatere strekkoden til samme verdi\?</string>
     <string name="no">Nei</string>
     <string name="yes">Ja</string>
@@ -239,7 +240,7 @@
         <item quantity="other"><xliff:g>%1$d</xliff:g> kort (<xliff:g id="archivedCount">%2$d</xliff:g> arkivert)</item>
     </plurals>
     <string name="failedToOpenUrl">Installer en nettleser først</string>
-    <string name="welcome">Velkommen til Catima</string>
+    <string name="welcome">Velkommen til zCard</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="one">Vis arkiv (<xliff:g>%1$d</xliff:g> kort)</item>
         <item quantity="other">Vis arkiv (<xliff:g>%1$d</xliff:g> kort)</item>

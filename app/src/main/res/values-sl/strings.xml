@@ -218,7 +218,7 @@
     <string name="importVoucherVaultMessage">Izberi svoj <i>vouchervault.json</i> Voucher Vault izvoz podatkov za uvoz.
 \nIzvoz podatkov dobiš s pritiskom na gumb \"Export\" v Voucher Vault first.</string>
     <string name="failedToOpenUrl">Prvo namestite spletni brskalnik</string>
-    <string name="welcome">Pozdravljeni v Catimi</string>
+    <string name="welcome">Pozdravljeni v zCard</string>
     <string name="noGiftCardsGroup">Kreiraj kartice in jim dodeli skupino tukaj.</string>
     <string name="privacy_policy_popup_text">Obvestilo o politiki zasebnosti (nekatere trgovine aplikacij to zahtevajo):
 \n
@@ -237,7 +237,8 @@
     </plurals>
     <string name="cameraPermissionDeniedTitle">Ni bilo mogoče dostopati do kamere</string>
     <string name="noCameraPermissionDirectToSystemSetting">Catima potrebuje dostop do vaše kamere za skeniranje črtnih kod. Pritisnite tukaj in spremenite nastavitve dovoljenj.</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <plurals name="groupCardCount">
         <item quantity="one"><xliff:g>%d</xliff:g> kartica</item>
         <item quantity="two"><xliff:g>%d</xliff:g> kartici</item>

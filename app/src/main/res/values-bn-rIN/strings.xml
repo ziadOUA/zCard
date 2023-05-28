@@ -99,7 +99,8 @@
     <string name="cameraPermissionRequired">এই কাজটির জন্য ক্যামেরা ব্যবহার করার অনুমতি লাগবে…</string>
     <string name="noCameraPermissionDirectToSystemSetting">বারকোড স্ক্যান করার জন্য, কাটিমাকে ফোনের ক্যামেরা ব্যবহার করার অনুমতি দিতে হবে। এইখানে টাচ করে আপনার অনুমতি সেটিংস পালটে নিন।</string>
     <string name="importOptionApplicationExplanation">আপনার প্রিয় ফাইল ম্যানেজার বা আর যেকোনো অ্যাপ দিয়ে একটি ফাইল খুলুন।</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">মেধাস্বত্ব © ২০১৯-<xliff:g>%d</xliff:g> সিলভিয়া ভান অস</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">মেধাস্বত্ব © ২০২৩-<xliff:g>%d</xliff:g> জিয়াদ ওয়া</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">মেধাস্বত্ব © ২০১৯-<xliff:g>%d</xliff:g> সিলভিয়া ভান অস</string>
     <string name="app_license">কপিলেফ্ট করা মুক্ত সফটওয়্যার, জিপিএলের ৩য় এবং তার অধিক সংস্করণে লাইসেন্স করা</string>
     <string name="enterBarcodeInstructions">আইডিটি লিখুন আর নয় নিচ থেকে একটি বারকোডের প্রকার বা \"কোনো বারকোড নেই\", নির্বাচন করুন।</string>
     <plurals name="deleteCardsConfirmation">
@@ -256,7 +257,7 @@
     <string name="unarchive">সংরক্ষণাগারমুক্ত করুন</string>
     <string name="archived">কার্ড সংরক্ষণাগারভুক্ত</string>
     <string name="noUnarchivedCardsMessage">আর্কাইভ করা কোনো কার্ড নেই</string>
-    <string name="welcome">Catima-তে স্বাগতম</string>
+    <string name="welcome">zCard-তে স্বাগতম</string>
     <string name="updateBalanceTitle">আপনি কত খরচ করেছেন\?</string>
     <string name="updateBalanceHint">পরিমান লিখুন</string>
     <string name="currentBalanceSentence">বর্তমান ব্যালেন্স: <xliff:g>%s</xliff:g></string>

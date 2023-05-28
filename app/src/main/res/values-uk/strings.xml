@@ -93,7 +93,8 @@
     <string name="app_license">Копілефт вільне програмне забезпечення, ліцензоване під GPLv3+</string>
     <string name="app_copyright_old">Створено на основі Loyalty Card Keychain
 \nавторські права © 2016–2020 Branden Archer</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="about">Про програму</string>
     <string name="importOptionApplicationButton">Використовувати інший застосунок</string>
     <string name="importOptionApplicationExplanation">Використайте інший застосунок чи ваш улюблений файл-менеджер для відкриття файлу.</string>
@@ -257,7 +258,7 @@
         <item quantity="other">Переглянути архів (<xliff:g>%1$d</xliff:g> карток)</item>
     </plurals>
     <string name="failedToOpenUrl">Спочатку встановіть браузер</string>
-    <string name="welcome">Ласкаво просимо до Catima</string>
+    <string name="welcome">Ласкаво просимо до zCard</string>
     <string name="failedToRetrieveImageFile">Збій доступу до файлу зображення</string>
     <string name="barcodeLongPressMessage">Галерея може відкривати лише зображення</string>
     <string name="importCards">Імпорт карток</string>

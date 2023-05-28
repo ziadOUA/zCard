@@ -219,7 +219,8 @@
         <item quantity="few">Izbrisati ove <xliff:g>%d</xliff:g> kartice zauvijek\?</item>
         <item quantity="other">Izbrisati ovih <xliff:g>%d</xliff:g> kartica zauvijek\?</item>
     </plurals>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019. – <xliff:g>%d.</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023. – <xliff:g>%d.</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019. – <xliff:g>%d.</xliff:g> Sylvia van Os</string>
     <string name="debug_version_fmt">Verzija: <xliff:g id="version">%s</xliff:g></string>
     <string name="app_resources">Libre resursi trećih strana: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="settings_landscape_orientation">Vodoravno</string>

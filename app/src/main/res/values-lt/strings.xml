@@ -137,7 +137,8 @@
     <string name="app_libraries">Laisvosios trečiųjų šalių bibliotekos: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="app_copyright_old">Paremta Loyalty Card Keychain
 \nautorinės teisės © 2016–2020 Branden Archer</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Autorinės teisės © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Autorinės teisės © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Autorinės teisės © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="importOptionApplicationButton">Naudoti kitą programą</string>
     <string name="importOptionApplicationExplanation">Norėdami atidaryti failą, naudokite bet kurią programą arba mėgstamą failų tvarkyklę.</string>
     <string name="importOptionApplicationTitle">Naudoti kitą programą</string>
@@ -246,7 +247,7 @@
     <string name="currentBalanceSentence">Dabartinis likutis: <xliff:g>%s</xliff:g></string>
     <string name="newBalanceSentence">Naujas balansas: <xliff:g>%s</xliff:g></string>
     <string name="failedToOpenUrl">Pirmiausia įdiekite žiniatinklio naršyklę</string>
-    <string name="welcome">Sveiki užėję į Catima</string>
+    <string name="welcome">Sveiki užėję į zCard</string>
     <string name="showMoreInfo">Rodyti informaciją</string>
     <string name="settings_oled_dark">Visiškai juodas fonas tamsiajai temai</string>
     <string name="settings_follow_system_orientation">Sekti sistemą</string>

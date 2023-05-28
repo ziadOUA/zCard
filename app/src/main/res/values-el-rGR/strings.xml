@@ -188,7 +188,8 @@
     <string name="settings_card_orientation">Προσανατολισμός γραμμοκώδικα</string>
     <string name="settings_portrait_orientation">Πορτραίτο</string>
     <string name="settings_landscape_orientation">Οριζόντια</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Πνευματικά δικαιώματα © 2019-<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Πνευματικά δικαιώματα © 2023-<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Πνευματικά δικαιώματα © 2019-<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="settings_lock_on_opening_orientation">Κλείδωμα τωρινού προσανατολισμού όταν ανοίγει μία κάρτα</string>
     <string name="intent_import_card_from_url_share_text">Θέλω να μοιραστώ μία κάρτα μαζί σου</string>
     <string name="enter_group_name">Εισάγετε όνομα ομάδας</string>
@@ -253,5 +254,5 @@
     <string name="currentBalanceSentence">Τωρινό υπόλοιπο <xliff:g>%s</xliff:g></string>
     <string name="newBalanceSentence">Νέο υπόλοιπο: <xliff:g>%s</xliff:g></string>
     <string name="failedToOpenUrl">Εγκαταστήστε έναν περιηγητή πρώτα</string>
-    <string name="welcome">Καλώς ήρθατε στο Catima</string>
+    <string name="welcome">Καλώς ήρθατε στο zCard</string>
 </resources>

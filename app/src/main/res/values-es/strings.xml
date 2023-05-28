@@ -95,7 +95,8 @@
     <string name="card">Tarjeta</string>
     <string name="expiryStateSentenceExpired">Expirado: <xliff:g>%s</xliff:g></string>
     <string name="expiryStateSentence">Expira: <xliff:g>%s</xliff:g></string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Derechos de autor © 2019-<xliff:g>%d</xliff:g> de Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Derechos de autor © 2023-<xliff:g>%d</xliff:g> de ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Derechos de autor © 2019-<xliff:g>%d</xliff:g> de Sylvia van Os</string>
     <string name="app_resources">Recursos de terceros libres: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Bibliotecas de terceros libres: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="importCatimaMessage">Seleccione su <i>catima.zip</i> exportado desde Catima para importarlo.
@@ -227,7 +228,7 @@
         <item quantity="many">Ver archivo (<xliff:g>%1$d</xliff:g> tarjetas)</item>
         <item quantity="other">Ver archivo (<xliff:g>%1$d</xliff:g> tarjetas)</item>
     </plurals>
-    <string name="welcome">Bienvenido/a a Catima</string>
+    <string name="welcome">Bienvenido/a a zCard</string>
     <string name="group_name_already_in_use">Nombre del grupo ya está en uso</string>
     <string name="group_name_is_empty">El nombre del grupo no puede estar vacío</string>
     <string name="settings_oled_dark">Fondo negro puro para el tema oscuro</string>

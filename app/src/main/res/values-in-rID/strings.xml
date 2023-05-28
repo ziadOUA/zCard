@@ -101,7 +101,8 @@
     <string name="importOptionApplicationExplanation">Gunakan aplikasi lain atau pengelola file favorit anda untuk membuka file.</string>
     <string name="importOptionApplicationButton">Gunakan aplikasi lain</string>
     <string name="about">Tentang</string>
-    <string name="app_copyright_fmt">Hak Cipta © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt">Hak Cipta © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt">Hak Cipta © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="app_copyright_old">Berdasarkan Loyalty Card Keychain 
 \nhak cipta © 2016–2020 Branden Archer</string>
     <string name="app_license">Perangkat lunak bebas copyleft, berlisensi GPLv3+</string>
@@ -209,7 +210,7 @@
     <string name="translate_platform">di Weblate</string>
     <string name="action_show_details">Tampilkan detail</string>
     <string name="action_hide_details">Sembunyikan detail</string>
-    <string name="welcome">Selamat datang di Catima</string>
+    <string name="welcome">Selamat datang di zCard</string>
     <string name="failedToOpenUrl">Install browser web terlebih dahulu</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="other">Lihat arsip (<xliff:g>%1$d</xliff:g> kartu)</item>

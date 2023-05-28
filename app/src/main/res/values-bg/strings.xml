@@ -126,7 +126,8 @@
     <string name="app_libraries">Свободни библиотеки: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="debug_version_fmt">Издание: <xliff:g id="version">%s</xliff:g></string>
     <string name="about_title_fmt">Относно <xliff:g id="app_name">%s</xliff:g></string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Всички права запазени © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Всички права запазени © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Всички права запазени © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="app_copyright_old">На основата на Loyalty Card Keychain
 \nвсички права запазени © 2016–2020 Branden Archer</string>
     <string name="about">Относно</string>
@@ -239,7 +240,7 @@
     <string name="previousCard">Предишна</string>
     <string name="nextCard">Следваща</string>
     <string name="failedToOpenUrl">Първо инсталирайте уеб браузър</string>
-    <string name="welcome">Добре дошли при Катима</string>
+    <string name="welcome">Добре дошли при zCard</string>
     <plurals name="viewArchivedCardsWithCount">
         <item quantity="one">Преглед на архива (<xliff:g>%1$d</xliff:g> карта)</item>
         <item quantity="other">Преглед на архива (<xliff:g>%1$d</xliff:g> карти)</item>
