@@ -34,10 +34,10 @@ public class AboutActivity extends CatimaAppCompatActivity {
 
         binding.versionHistory.setTag("https://catima.app/changelog/");
         binding.translate.setTag("https://hosted.weblate.org/engage/catima/");
-        binding.license.setTag("https://github.com/CatimaLoyalty/Android/blob/main/LICENSE");
-        binding.repo.setTag("https://github.com/CatimaLoyalty/Android/");
+        binding.license.setTag("https://github.com/ziadOUA/zCard/blob/main/LICENSE");
+        binding.repo.setTag("https://github.com/ziadOUA/zCard/");
         binding.privacy.setTag("https://catima.app/privacy-policy/");
-        binding.reportError.setTag("https://github.com/CatimaLoyalty/Android/issues");
+        binding.reportError.setTag("https://github.com/ziadOUA/zCard/issues");
         binding.rate.setTag("https://play.google.com/store/apps/details?id=me.hackerchick.catima");
 //        binding.donate.setTag("https://catima.app/contribute/#donating");
 
