@@ -13,26 +13,26 @@
 ## Light theme
 
 <div>
-  <img src="https://i.postimg.cc/Hsz6NdG5/screenshot-light1.png" width="200">
-  <img src="https://i.postimg.cc/yNgnWRDX/screenshot-light2.png" width="200">
-  <img src="https://i.postimg.cc/k4WcvdF2/screenshot-light3.png" width="200">
-  <img src="https://i.postimg.cc/R0kdt0fr/screenshot-light4.png" width="200">
+  <img src="https://i.postimg.cc/FHFpCdsy/screenshot-light1.png" width="200">
+  <img src="https://i.postimg.cc/wTp0J4Cb/screenshot-light2.png" width="200">
+  <img src="https://i.postimg.cc/XvmgvsKL/screenshot-light3.png" width="200">
+  <img src="https://i.postimg.cc/kGdFQDpt/screenshot-light4.png" width="200">
 </div>
 
 ## Dark theme
 
 <div>
-  <img src="https://i.postimg.cc/J0cpMWGf/screeshot-dark1.png" width="200">
-  <img src="https://i.postimg.cc/bYQCQ13m/screeshot-dark2.png" width="200">
-  <img src="https://i.postimg.cc/CLSvJd2S/screeshot-dark3.png" width="200">
-  <img src="https://i.postimg.cc/t4gBQwyc/screeshot-dark4.png" width="200">
+  <img src="https://i.postimg.cc/7hM1mDFt/screeshot-dark1.png" width="200">
+  <img src="https://i.postimg.cc/v8904wNV/screeshot-dark2.png" width="200">
+  <img src="https://i.postimg.cc/PqP4hgDN/screeshot-dark3.png" width="200">
+  <img src="https://i.postimg.cc/XY28RjpT/screeshot-dark4.png" width="200">
 </div>
 
 ## Material You
 
 <div>
-  <img src="https://i.postimg.cc/vTztCLKM/screenshot-light5.png" width="200">
-  <img src="https://i.postimg.cc/x1Ft0511/screenshot-dark5.png" width="200">
+  <img src="https://i.postimg.cc/NMXk2Rpc/screenshot-light5.png" width="200">
+  <img src="https://i.postimg.cc/TYJQcqG2/screeshot-dark5.png" width="200">
 </div>
 
 # More informations
