@@ -6,6 +6,7 @@
   <p>A simple and beautiful app that stores loyalty, membership and gift cards, instead of carrying them around.</p>
   <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Android/android2.svg">
   <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java2.svg">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/AndroidStudio/androidstudio2.svg">
 </div>
 
 # Screenshots
