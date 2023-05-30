@@ -85,10 +85,7 @@ public class GroupCursorAdapter extends BaseCursorAdapter<GroupCursorAdapter.Gro
 
     public static class GroupListItemViewHolder extends RecyclerView.ViewHolder {
         public TextView mName, mCardCount;
-        public Button mMoveUp;
-        public Button mMoveDown;
-        public Button mEdit;
-        public Button mDelete;
+        public Button mMoveUp, mMoveDown, mEdit, mDelete;
 
         public GroupListItemViewHolder(GroupLayoutBinding groupLayoutBinding) {
             super(groupLayoutBinding.getRoot());

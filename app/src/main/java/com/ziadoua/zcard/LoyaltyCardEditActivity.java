@@ -98,6 +98,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
     private final String STATE_FRONT_IMAGE_REMOVED = "frontImageRemoved";
     private final String STATE_BACK_IMAGE_REMOVED = "backImageRemoved";
     private final String STATE_ICON_REMOVED = "iconRemoved";
+    private final String STATE_OPEN_SET_ICON_MENU = "openSetIconMenu";
 
     private final String TEMP_CAMERA_IMAGE_NAME = LoyaltyCardEditActivity.class.getSimpleName() + "_camera_image.jpg";
     private final String TEMP_CROP_IMAGE_NAME = LoyaltyCardEditActivity.class.getSimpleName() + "_crop_image.png";
@@ -118,6 +119,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
     public static final String BUNDLE_ID = "id";
     public static final String BUNDLE_DUPLICATE_ID = "duplicateId";
     public static final String BUNDLE_UPDATE = "update";
+    public static final String BUNDLE_OPEN_SET_ICON_MENU = "openSetIconMenu";
     public static final String BUNDLE_CARDID = "cardId";
     public static final String BUNDLE_BARCODEID = "barcodeId";
     public static final String BUNDLE_BARCODETYPE = "barcodeType";
@@ -152,6 +154,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
     int loyaltyCardId;
     boolean updateLoyaltyCard;
     boolean duplicateFromLoyaltyCardId;
+    boolean openSetIconMenu;
     String cardId;
     String barcodeId;
     String barcodeType;
@@ -238,6 +241,8 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         updateLoyaltyCard = b != null && b.getBoolean(BUNDLE_UPDATE, false);
         duplicateFromLoyaltyCardId = b != null && b.getBoolean(BUNDLE_DUPLICATE_ID, false);
 
+        openSetIconMenu = b != null && b.getBoolean(BUNDLE_OPEN_SET_ICON_MENU, false);
+
         cardId = b != null ? b.getString(BUNDLE_CARDID) : null;
         barcodeId = b != null ? b.getString(BUNDLE_BARCODEID) : null;
         barcodeType = b != null ? b.getString(BUNDLE_BARCODETYPE) : null;
@@ -284,6 +289,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         savedInstanceState.putInt(STATE_FRONT_IMAGE_REMOVED, mFrontImageRemoved ? 1 : 0);
         savedInstanceState.putInt(STATE_BACK_IMAGE_REMOVED, mBackImageRemoved ? 1 : 0);
         savedInstanceState.putInt(STATE_ICON_REMOVED, mIconRemoved ? 1 : 0);
+        savedInstanceState.putInt(STATE_OPEN_SET_ICON_MENU, openSetIconMenu ? 1 : 0);
     }
 
     @Override
@@ -301,6 +307,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         mFrontImageRemoved = savedInstanceState.getInt(STATE_FRONT_IMAGE_REMOVED) == 1;
         mBackImageRemoved = savedInstanceState.getInt(STATE_BACK_IMAGE_REMOVED) == 1;
         mIconRemoved = savedInstanceState.getInt(STATE_ICON_REMOVED) == 1;
+        openSetIconMenu = savedInstanceState.getInt(STATE_OPEN_SET_ICON_MENU) == 1;
     }
 
     @Override
@@ -897,6 +904,13 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         }
 
         onResuming = false;
+
+        // Fake click on the edit icon to cause the set icon option to pop up if the icon was
+        // long-pressed in the view activity
+        if (openSetIconMenu) {
+            openSetIconMenu = false;
+            thumbnail.callOnClick();
+        }
     }
 
     protected void setColorFromIcon() {
