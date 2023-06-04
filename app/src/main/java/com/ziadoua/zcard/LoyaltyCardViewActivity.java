@@ -347,7 +347,7 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         TextView infoTextview = new TextView(this);
         infoTextview.setPadding(
                 dialogContentPadding,
-                0,
+                dialogContentPadding / 2,
                 dialogContentPadding,
                 0
         );
@@ -410,6 +410,7 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         );
         int contentPadding = getResources().getDimensionPixelSize(R.dimen.alert_dialog_content_padding);
         params.leftMargin = contentPadding;
+        params.topMargin = contentPadding / 2;
         params.rightMargin = contentPadding;
 
         LinearLayout layout = new LinearLayout(this);
