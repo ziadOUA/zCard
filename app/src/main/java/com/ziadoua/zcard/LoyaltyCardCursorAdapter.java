@@ -301,7 +301,7 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
 
     public class LoyaltyCardListItemViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView mCardText, mNoteField, mBalanceField, mValidFromField, mExpiryField;
+        public TextView mCardText, mNoteField, mBalanceField, mValidFromField, mExpiryField, mStoreField;
         public ImageView mCardIcon, mStarBackground, mTickIcon, mArchivedBackground;
         public MaterialCardView mRow;
         public ConstraintLayout mStar, mArchived;
