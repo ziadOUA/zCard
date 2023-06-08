@@ -344,7 +344,7 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
 
             field.setVisibility(View.VISIBLE);
             field.setText(text);
-            field.setTextColor(color != null ? color : MaterialColors.getColor(mContext, com.google.android.material.R.attr.colorSecondary, ContextCompat.getColor(mContext, mDarkModeEnabled ? R.color.md_theme_dark_secondary : R.color.md_theme_light_secondary)));
+            field.setTextColor(color != null ? color : MaterialColors.getColor(mContext, com.google.android.material.R.attr.colorOnSurfaceVariant, ContextCompat.getColor(mContext, mDarkModeEnabled ? R.color.md_theme_dark_onSurfaceVariant : R.color.md_theme_light_onSurfaceVariant)));
 
             mDivider.setVisibility(View.VISIBLE);
             field.setVisibility(View.VISIBLE);
@@ -352,12 +352,6 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
             if (icon != null) {
                 icon.mutate();
                 field.setCompoundDrawablesRelative(icon, null, null, null);
-
-                if (color != null) {
-                    icon.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(color, BlendModeCompat.SRC_ATOP));
-                } else {
-                    icon.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(mDarkModeEnabled ? Color.WHITE : Color.BLACK, BlendModeCompat.SRC_ATOP));
-                }
             }
 
             field.requestLayout();
@@ -429,9 +423,4 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
         }
     }
 
-    public int dpToPx(int dp, Context mContext) {
-        Resources r = mContext.getResources();
-        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
-        return px;
-    }
 }
