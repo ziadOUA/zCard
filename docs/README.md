@@ -14,7 +14,7 @@
 ## Light theme
 
 <div>
-  <img src="https://i.postimg.cc/FHFpCdsy/screenshot-light1.png" width="200">
+  <img src="https://i.postimg.cc/4dFzq9M4/Screenshot-20230616-101406.png" width="200">
   <img src="https://i.postimg.cc/wTp0J4Cb/screenshot-light2.png" width="200">
   <img src="https://i.postimg.cc/XvmgvsKL/screenshot-light3.png" width="200">
   <img src="https://i.postimg.cc/kGdFQDpt/screenshot-light4.png" width="200">
@@ -23,7 +23,7 @@
 ## Dark theme
 
 <div>
-  <img src="https://i.postimg.cc/7hM1mDFt/screeshot-dark1.png" width="200">
+  <img src="https://i.postimg.cc/1R2GKDwJ/Screenshot-20230616-101428.png" width="200">
   <img src="https://i.postimg.cc/v8904wNV/screeshot-dark2.png" width="200">
   <img src="https://i.postimg.cc/PqP4hgDN/screeshot-dark3.png" width="200">
   <img src="https://i.postimg.cc/XY28RjpT/screeshot-dark4.png" width="200">
