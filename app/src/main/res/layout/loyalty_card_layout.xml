@@ -73,10 +73,10 @@
 
                 <ImageView
                     android:id="@+id/star_background"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
                     android:layout_gravity="end"
-                    android:alpha="0.5"
                     android:contentDescription="@string/starred"
                     android:elevation="4dp"
                     android:visibility="visible"
