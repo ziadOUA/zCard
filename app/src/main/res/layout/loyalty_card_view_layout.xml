@@ -89,34 +89,6 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="4dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-                    <Button
-                        android:id="@+id/main_left_button"
-                        style="?attr/materialIconButtonFilledStyle"
-                        android:layout_width="@dimen/groupManageButtonSize"
-                        android:layout_height="@dimen/groupManageButtonSize"
-                        android:backgroundTint="?attr/colorTertiary"
-                        android:importantForAccessibility="no"
-                        app:icon="@drawable/ic_baseline_chevron_left_24"
-                        app:iconGravity="textStart" />
-                    <Button
-                        android:id="@+id/main_right_button"
-                        style="?attr/materialIconButtonFilledStyle"
-                        android:layout_width="@dimen/groupManageButtonSize"
-                        android:layout_height="@dimen/groupManageButtonSize"
-                        android:backgroundTint="?attr/colorTertiary"
-                        android:importantForAccessibility="no"
-                        app:icon="@drawable/ic_baseline_chevron_right_24"
-                        app:iconGravity="textStart" />
-                </LinearLayout>
-
                 <View
                     android:id="@+id/card_divider"
                     android:layout_width="match_parent"
@@ -138,7 +110,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     app:layout_constraintTop_toBottomOf="@+id/card_divider"
-                    tools:layout_editor_absoluteX="10dp">
+                    tools:layout_editor_absoluteX="10dp"
+                    android:baselineAligned="false">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/card_holder"
@@ -147,6 +120,7 @@
                         android:layout_weight="1">
 
                         <LinearLayout
+                            android:id="@+id/card_format"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:orientation="horizontal"
@@ -154,31 +128,74 @@
                             app:layout_constraintDimensionRatio="85.6f:53.98f"
                             app:layout_constraintTop_toTopOf="parent">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/main_card_view"
+                                style="@style/Widget.Material3.CardView.Filled"
+                                app:cardCornerRadius="16dp"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical">
+                                android:backgroundTint="@android:color/white"
+                                android:layout_weight="1">
 
-                                <ImageView
-                                    android:id="@+id/main_image"
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:importantForAccessibility="no" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
 
-                                <TextView
-                                    android:id="@+id/card_id_view"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:fontFamily="@font/jetbrainsmono"
-                                    android:gravity="center"
-                                    android:textColor="?attr/colorOnSurfaceVariant"
-                                    android:textSize="@dimen/text_size_large"
-                                    tools:text="Barcode ID" />
-                            </LinearLayout>
+                                    <ImageView
+                                        android:id="@+id/main_image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:importantForAccessibility="no" />
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
                         </LinearLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/card_id_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jetbrainsmono"
+                    android:gravity="center"
+                    android:textColor="?attr/colorOnSecondaryContainer"
+                    android:textSize="@dimen/text_size_large"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:text="Barcode ID" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_id_view">
+
+                    <Button
+                        android:id="@+id/main_left_button"
+                        style="?attr/materialIconButtonFilledStyle"
+                        android:layout_width="@dimen/groupManageButtonSize"
+                        android:layout_height="@dimen/groupManageButtonSize"
+                        android:backgroundTint="?attr/colorTertiary"
+                        android:importantForAccessibility="no"
+                        app:icon="@drawable/ic_baseline_chevron_left_24"
+                        app:iconGravity="textStart" />
+
+                    <Button
+                        android:id="@+id/main_right_button"
+                        style="?attr/materialIconButtonFilledStyle"
+                        android:layout_width="@dimen/groupManageButtonSize"
+                        android:layout_height="@dimen/groupManageButtonSize"
+                        android:backgroundTint="?attr/colorTertiary"
+                        android:importantForAccessibility="no"
+                        app:icon="@drawable/ic_baseline_chevron_right_24"
+                        app:iconGravity="textStart" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>

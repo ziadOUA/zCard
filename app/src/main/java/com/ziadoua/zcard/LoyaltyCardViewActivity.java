@@ -4,12 +4,12 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.content.res.ColorStateList;
+//import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
+//import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
@@ -20,7 +20,7 @@ import android.text.method.DigitsKeyListener;
 import android.text.style.ForegroundColorSpan;
 import android.text.util.Linkify;
 import android.util.Log;
-import android.util.TypedValue;
+//import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,8 +30,9 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
+//import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
@@ -41,16 +42,17 @@ import android.widget.Toast;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.content.res.AppCompatResources;
+//import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.content.FileProvider;
-import androidx.core.graphics.BlendModeColorFilterCompat;
-import androidx.core.graphics.BlendModeCompat;
-import androidx.core.graphics.ColorUtils;
-import androidx.core.graphics.drawable.DrawableCompat;
+//import androidx.core.graphics.BlendModeColorFilterCompat;
+//import androidx.core.graphics.BlendModeCompat;
+//import androidx.core.graphics.ColorUtils;
+//import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.widget.TextViewCompat;
+//import androidx.core.widget.TextViewCompat;
 
 import com.google.android.material.color.MaterialColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -830,7 +832,7 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         if (imageTypes.isEmpty()) {
             barcodeRenderTarget.setVisibility(View.GONE);
             binding.mainCardView.setCardBackgroundColor(Color.TRANSPARENT);
-            binding.cardIdView.setTextColor(MaterialColors.getColor(binding.cardIdView, com.google.android.material.R.attr.colorOnSurfaceVariant));
+            binding.cardIdView.setVisibility(View.VISIBLE);
             return;
         }
 
@@ -839,7 +841,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         if (wantedImageType == ImageType.BARCODE) {
             barcodeRenderTarget.setBackgroundColor(Color.WHITE);
             binding.mainCardView.setCardBackgroundColor(Color.WHITE);
-            binding.cardIdView.setTextColor(getResources().getColor(R.color.md_theme_light_onSurfaceVariant));
 
             if (waitForResize) {
                 redrawBarcodeAfterResize(!isFullscreen);
@@ -852,13 +853,11 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
             barcodeRenderTarget.setImageBitmap(frontImageBitmap);
             barcodeRenderTarget.setBackgroundColor(Color.TRANSPARENT);
             binding.mainCardView.setCardBackgroundColor(Color.TRANSPARENT);
-            binding.cardIdView.setTextColor(MaterialColors.getColor(binding.cardIdView, com.google.android.material.R.attr.colorOnSurfaceVariant));
             barcodeRenderTarget.setContentDescription(getString(R.string.frontImageDescription));
         } else if (wantedImageType == ImageType.IMAGE_BACK) {
             barcodeRenderTarget.setImageBitmap(backImageBitmap);
             barcodeRenderTarget.setBackgroundColor(Color.TRANSPARENT);
             binding.mainCardView.setCardBackgroundColor(Color.TRANSPARENT);
-            binding.cardIdView.setTextColor(MaterialColors.getColor(binding.cardIdView, com.google.android.material.R.attr.colorOnSurfaceVariant));
             barcodeRenderTarget.setContentDescription(getString(R.string.backImageDescription));
         } else {
             throw new IllegalArgumentException("Unknown image type: " + wantedImageType);
@@ -871,7 +870,7 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         int newIndex = mainImageIndex + (next ? 1 : -1);
 
         if (newIndex >= imageTypes.size() && overflow) {
-        newIndex = 0;
+            newIndex = 0;
         }
 
         if (newIndex == -1 || newIndex >= imageTypes.size()) {
@@ -944,8 +943,8 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
             return;
         }
 
-        final ImageButton prevButton;
-        final ImageButton nextButton;
+        final Button prevButton;
+        final Button nextButton;
 
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
             prevButton = binding.mainRightButton;
