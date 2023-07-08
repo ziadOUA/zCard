@@ -1,4 +1,4 @@
-package protect.card_locker.contentprovider;
+package com.ziadoua.zcard.contentprovider;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -31,10 +31,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import protect.card_locker.CatimaBarcode;
-import protect.card_locker.DBHelper;
-import protect.card_locker.Group;
-import protect.card_locker.TestHelpers;
+import com.ziadoua.zcard.CatimaBarcode;
+import com.ziadoua.zcard.DBHelper;
+import com.ziadoua.zcard.Group;
+import com.ziadoua.zcard.TestHelpers;
 
 @RunWith(RobolectricTestRunner.class)
 public class CardsContentProviderTest {

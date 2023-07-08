@@ -1,6 +1,6 @@
-package protect.card_locker.contentprovider;
+package com.ziadoua.zcard.contentprovider;
 
-import static protect.card_locker.DBHelper.LoyaltyCardDbIds;
+import static com.ziadoua.zcard.DBHelper.LoyaltyCardDbIds;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -19,12 +19,12 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import protect.card_locker.BuildConfig;
-import protect.card_locker.DBHelper;
-import protect.card_locker.preferences.Settings;
+import com.ziadoua.zcard.BuildConfig;
+import com.ziadoua.zcard.DBHelper;
+import com.ziadoua.zcard.preferences.Settings;
 
 public class CardsContentProvider extends ContentProvider {
-    private static final String TAG = "Catima";
+    private static final String TAG = "zCard";
 
     public static final String AUTHORITY = BuildConfig.APPLICATION_ID + ".contentprovider.cards";
 
