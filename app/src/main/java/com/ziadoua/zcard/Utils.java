@@ -50,6 +50,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Calendar;
@@ -270,8 +271,10 @@ public class Utils {
         currencyFormat.setCurrency(currency);
         currencyFormat.setMinimumFractionDigits(currency.getDefaultFractionDigits());
         currencyFormat.setMaximumFractionDigits(currency.getDefaultFractionDigits());
-
-        return currencyFormat.format(value);
+        // adding a space between the currency code and the balance
+        String formattedCurrency = currencyFormat.format(value);
+        formattedCurrency = formattedCurrency.replace(currency.getCurrencyCode(), currency.getCurrencyCode() + " ");
+        return formattedCurrency;
     }
 
     static public String formatBalanceWithoutCurrencySymbol(BigDecimal value, Currency currency) {
@@ -538,6 +541,8 @@ public class Utils {
             theme.applyStyle(R.style.green, true);
         } else if (color.equals(resources.getString(R.string.settings_key_brown_theme))) {
             theme.applyStyle(R.style.brown, true);
+        } else if (color.equals(resources.getString(R.string.settings_key_grey_theme))) {
+            theme.applyStyle(R.style.grey, true);
         } else if (color.equals(resources.getString(R.string.settings_key_catima_theme))) {
             // catima theme is AppTheme itself, no dynamic colors nor applyStyle
         } else {

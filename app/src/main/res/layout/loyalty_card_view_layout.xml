@@ -18,7 +18,7 @@
     </com.google.android.material.appbar.AppBarLayout>
         <com.google.android.material.card.MaterialCardView
             style="?attr/materialCardViewFilledStyle"
-            android:backgroundTint="?attr/colorTertiaryContainer"
+            android:backgroundTint="?attr/colorPrimaryContainer"
             android:id="@+id/container"
             app:cardCornerRadius="32dp"
             android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                             app:layout_constraintTop_toTopOf="parent"
                             android:layout_marginStart="70dp">
                             <TextView
-                                android:textColor="?attr/colorOnTertiaryContainer"
+                                android:textColor="?attr/colorOnPrimaryContainer"
                                 android:id="@+id/icon_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jetbrainsmono"
                     android:gravity="center"
-                    android:textColor="?attr/colorOnSecondaryContainer"
+                    android:textColor="?attr/colorOnPrimaryContainer"
                     android:textSize="@dimen/text_size_large"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
                     tools:layout_editor_absoluteX="10dp"
@@ -182,7 +182,6 @@
                         style="?attr/materialIconButtonFilledStyle"
                         android:layout_width="@dimen/groupManageButtonSize"
                         android:layout_height="@dimen/groupManageButtonSize"
-                        android:backgroundTint="?attr/colorTertiary"
                         android:importantForAccessibility="no"
                         app:icon="@drawable/ic_baseline_chevron_left_24"
                         app:iconGravity="textStart" />
@@ -192,7 +191,6 @@
                         style="?attr/materialIconButtonFilledStyle"
                         android:layout_width="@dimen/groupManageButtonSize"
                         android:layout_height="@dimen/groupManageButtonSize"
-                        android:backgroundTint="?attr/colorTertiary"
                         android:importantForAccessibility="no"
                         app:icon="@drawable/ic_baseline_chevron_right_24"
                         app:iconGravity="textStart" />

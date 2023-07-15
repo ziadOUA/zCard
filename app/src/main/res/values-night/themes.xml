@@ -249,4 +249,33 @@
         <item name="colorSurfaceInverse">#EDE0DC</item>
         <item name="colorPrimaryInverse">#9A4523</item>
     </style>
+
+    <style name="grey">
+        <item name="colorPrimary">#c7c7c7</item>
+        <item name="colorOnPrimary">#2e2e2e</item>
+        <item name="colorPrimaryContainer">#424242</item>
+        <item name="colorOnPrimaryContainer">#e4e4e4</item>
+        <item name="colorSecondary">#c7c7c7</item>
+        <item name="colorOnSecondary">#303030</item>
+        <item name="colorSecondaryContainer">#474747</item>
+        <item name="colorOnSecondaryContainer">#e4e4e4</item>
+        <item name="colorTertiary">#c3c3c3</item>
+        <item name="colorOnTertiary">#2e2e2e</item>
+        <item name="colorTertiaryContainer">#444444</item>
+        <item name="colorOnTertiaryContainer">#dfdfdf</item>
+        <item name="colorError">#FFB4A9</item>
+        <item name="colorErrorContainer">#930006</item>
+        <item name="colorOnError">#680003</item>
+        <item name="colorOnErrorContainer">#FFDAD4</item>
+        <item name="android:colorBackground">#1b1b1b</item>
+        <item name="colorOnBackground">#e3e3e3</item>
+        <item name="colorSurface">#131313</item>
+        <item name="colorOnSurface">#c7c7c7</item>
+        <item name="colorSurfaceVariant">#474747</item>
+        <item name="colorOnSurfaceVariant">#c7c7c7</item>
+        <item name="colorOutline">#919191</item>
+        <item name="colorOnSurfaceInverse">#383838</item>
+        <item name="colorSurfaceInverse">#ececec</item>
+        <item name="colorPrimaryInverse">#383838</item>
+    </style>
 </resources>
