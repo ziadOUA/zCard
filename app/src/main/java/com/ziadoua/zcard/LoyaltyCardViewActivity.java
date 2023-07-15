@@ -305,20 +305,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         binding.bottomAppBarNextButton.setOnClickListener(view -> prevNextCard(true));
         binding.bottomAppBarUpdateBalanceButton.setOnClickListener(view -> showBalanceUpdateDialog());
 
-        binding.iconContainer.setOnClickListener(view -> Toast.makeText(LoyaltyCardViewActivity.this, R.string.icon_header_click_text, Toast.LENGTH_LONG).show());
-        binding.iconContainer.setOnLongClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), LoyaltyCardEditActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putInt(LoyaltyCardEditActivity.BUNDLE_ID, loyaltyCardId);
-            bundle.putBoolean(LoyaltyCardEditActivity.BUNDLE_UPDATE, true);
-            bundle.putBoolean(LoyaltyCardEditActivity.BUNDLE_OPEN_SET_ICON_MENU, true);
-            intent.putExtras(bundle);
-            startActivity(intent);
-            finish();
-
-            return true;
-        });
-
         binding.mainImage.setOnClickListener(view -> onMainImageTap());
         // This long-press was originally only intended for when Talkback was used but sadly limiting
         // this doesn't seem to work well
@@ -600,7 +586,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
 
         binding.cardIdView.setText(loyaltyCard.cardId);
 
-        Utils.setIconOrTextWithBackgroundNoColorCorrection(this, loyaltyCard, binding.iconImage, binding.iconText);
         setBottomAppBarButtonState();
 
         if (format != null && !format.isSupported()) {
@@ -781,17 +766,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         int orientation = getResources().getConfiguration().orientation;
         // Detect square-ish screens like the Unihertz Titan
         boolean isSmallHeight = getResources().getDisplayMetrics().heightPixels < (getResources().getDisplayMetrics().widthPixels * 1.5);
-
-        // Treat sqaure-ish screens as
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE || isSmallHeight) {
-            Log.d(TAG, "Detected landscape mode or square-ish screen");
-            binding.iconContainer.setVisibility(View.GONE);
-            binding.cardDivider.setVisibility(View.GONE);
-        } else {
-            Log.d(TAG, "Detected portrait mode on non square-ish screen");
-            binding.iconContainer.setVisibility(View.VISIBLE);
-            binding.cardDivider.setVisibility(View.VISIBLE);
-        }
 
         enableToolbarBackButton();
     }
