@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased - 127
+## Unreleased - 128
+
+- Fix rare crash
+
+## v2.25.0 - 127 (2023-07-09)
 
 - Barcode rendering improvements
 - Basic interoperability with external apps (Android 6.0+)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
     <string name="action_add">Legg til</string>
-    <string name="noGiftCards">Klikk på «+» (pluss)-knappen for å legge til eller importer kort fra «⋮»-menyen</string>
+    <string name="noGiftCards">Klikk på «+» (pluss)-knappen for å legge til eller importere kort fra «⋮»-menyen.</string>
     <string name="storeName">Navn</string>
     <string name="note">Merknad</string>
     <string name="cardId">Kort-ID</string>
@@ -62,7 +62,7 @@
     <string name="failedParsingImportUriError">Kunne ikke tolke importerings-URI</string>
     <string name="share">Del</string>
     <string name="barcodeNoBarcode">Det er ingen strekkode</string>
-    <string name="noMatchingGiftCards">Resultatløst. Prøv å endre søket.</string>
+    <string name="noMatchingGiftCards">Ingen resultater. Prøv å endre søket.</string>
     <string name="action_search">Søk</string>
     <string name="starImage">Favorittstjerne</string>
     <string name="unstar">Fjern fra favoritter</string>
@@ -188,7 +188,7 @@
     <string name="license">Lisens</string>
     <string name="version_history">Versjonshistorikk</string>
     <string name="importCatimaMessage">Velg din <i>catima.zip</i>-eksport fra Catima å importere.
-\nOpprett den fra «Importer/Eksporter»-menyen i en annen Catima-app ved å trykke på «Eksporter» der først</string>
+\nOpprett den fra «Importer/Eksporter»-menyen i en annen Catima-app ved å trykke på «Eksporter» der først.</string>
     <string name="source_repository">Kildekode</string>
     <string name="on_github">på GitHub</string>
     <string name="and_data_usage">og bruk av data</string>
@@ -207,7 +207,7 @@
     <string name="action_show_details">Vis detaljer</string>
     <string name="action_hide_details">Skjul detaljer</string>
     <string name="selectColor">Velg farge</string>
-    <string name="setIcon">Sett ikon</string>
+    <string name="setIcon">Sett miniatyrbilde</string>
     <string name="shortcutSelectCard">velg et kort</string>
     <string name="translate_platform">på Weblate</string>
     <string name="options">Alternativer</string>
@@ -265,7 +265,7 @@
     <string name="switchToBackImage">Bytt til baksidebildet</string>
     <string name="switchToBarcode">Bytt til strekkode</string>
     <string name="icon_header_click_text">Lang-trykk for å redigere miniatyrbilde</string>
-    <string name="show_name_below_image_thumbnail">Vis navn under bilde-miniatyrbilde</string>
+    <string name="show_name_below_image_thumbnail">Vis navn under miniatyrbilde</string>
     <string name="show_balance">Vis saldo</string>
     <string name="show_note">Vis notat</string>
     <string name="show_validity">Vis gyldighet</string>
@@ -273,4 +273,15 @@
     <string name="openBackImageInGalleryApp">Åpne baksidebilde i galleriprogram</string>
     <string name="setBarcodeHeight">Sett strekkodehøyde</string>
     <string name="donate">Doner</string>
+    <string name="permissionReadCardsLabel">Les Catima-kort</string>
+    <string name="permissionReadCardsDescription">Les kortene dine og detaljene om dem, inkludert notater og bilder</string>
+    <string name="settings_allow_content_provider_read_summary">Programmer vil fremdeles måtte forespørre tilgang for å få det innvilget</string>
+    <string name="settings_display_barcode_max_brightness_summary">Nødvendig for noen skannere</string>
+    <string name="settings_keep_screen_on_summary">Skrur av skjermtidsavbrudd under visning av et kort</string>
+    <string name="settings_disable_lockscreen_while_viewing_card_summary">Skrur av skjermlås under visning av et kort</string>
+    <string name="settings_allow_content_provider_read_title">Tillat andre programmer tilgang til min data</string>
+    <string name="settings_category_title_cards">Kort</string>
+    <string name="settings_category_title_general">Generelt</string>
+    <string name="settings_category_title_privacy">Personvern</string>
+    <string name="settings_oled_dark_summary">Reduserer batteribruk for OLED-skjermer</string>
 </resources>

@@ -70,19 +70,13 @@ class ShortcutHelper {
             ShortcutInfoCompat found = list.remove(foundIndex.intValue());
             list.addFirst(found);
         } else {
-            // The item is new to the list. First, we need to trim the list
-            // until it is able to accept a new item, then the item is
-            // inserted.
-            while (list.size() >= MAX_SHORTCUTS) {
-                list.pollLast();
-            }
-
+            // The item is new to the list. We add it and trim the list later.
             ShortcutInfoCompat shortcut = createShortcutBuilder(context, card).build();
-
             list.addFirst(shortcut);
         }
 
         LinkedList<ShortcutInfoCompat> finalList = new LinkedList<>();
+        int rank = 0;
 
         // The ranks are now updated; the order in the list is the rank.
         for (int index = 0; index < list.size(); index++) {
@@ -90,11 +84,20 @@ class ShortcutHelper {
 
             LoyaltyCard loyaltyCard = DBHelper.getLoyaltyCard(database, Integer.parseInt(prevShortcut.getId()));
 
-            ShortcutInfoCompat updatedShortcut = createShortcutBuilder(context, loyaltyCard)
-                    .setRank(index)
-                    .build();
+            // skip outdated cards that no longer exist
+            if (loyaltyCard != null) {
+                ShortcutInfoCompat updatedShortcut = createShortcutBuilder(context, loyaltyCard)
+                        .setRank(rank)
+                        .build();
 
-            finalList.addLast(updatedShortcut);
+                finalList.addLast(updatedShortcut);
+                rank++;
+
+                // trim the list
+                if (rank >= MAX_SHORTCUTS) {
+                    break;
+                }
+            }
         }
 
         ShortcutManagerCompat.setDynamicShortcuts(context, finalList);
