@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased - 128
+## Unreleased - 129
+
+- Improved Catima importer (fixes cards missing when importing)
+
+## v2.25.1 - 128 (2023-07-17)
 
 - Fix rare crash
 
