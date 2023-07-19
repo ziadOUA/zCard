@@ -35,7 +35,8 @@ import com.ziadoua.zcard.FormatException;
 import com.ziadoua.zcard.Group;
 import com.ziadoua.zcard.ImageLocationType;
 import com.ziadoua.zcard.LoyaltyCard;
-import protect.card_locker.ZipUtils;
+import com.ziadoua.zcard.Utils;
+import com.ziadoua.zcard.ZipUtils;
 
 /**
  * Class for importing a database from CSV (Comma Separate Values)

@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import protect.card_locker.Utils;
+import com.ziadoua.zcard.Utils;
 
 public class MultiFormatImporter {
     private static final String TAG = "zCard";
