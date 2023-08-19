@@ -88,7 +88,7 @@ import com.ziadoua.zcard.async.TaskHandler;
 import com.ziadoua.zcard.databinding.LayoutChipChoiceBinding;
 import com.ziadoua.zcard.databinding.LoyaltyCardEditActivityBinding;
 
-public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements BarcodeImageWriterResultCallback {
+public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements BarcodeImageWriterResultCallback, ColorPickerDialogListener {
     private LoyaltyCardEditActivityBinding binding;
     private static final String TAG = "zCard";
 
@@ -174,6 +174,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
     String tempStoredOldBarcodeValue = null;
     boolean initDone = false;
     boolean onResuming = false;
+    boolean onRestoring = false;
     AlertDialog confirmExitDialog = null;
 
     boolean validBalance = true;
@@ -300,6 +301,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
 
     @Override
     public void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        onRestoring = true;
         tempLoyaltyCard = savedInstanceState.getParcelable(STATE_TEMP_CARD);
         super.onRestoreInstanceState(savedInstanceState);
         tabs = binding.tabs;
@@ -395,7 +397,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         });
 
         balanceField.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
+            if (!hasFocus && !onResuming && !onRestoring) {
                 balanceField.setText(Utils.formatBalanceWithoutCurrencySymbol(tempLoyaltyCard.balance, tempLoyaltyCard.balanceType));
             }
         });
@@ -403,6 +405,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         balanceField.addTextChangedListener(new SimpleTextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (onResuming || onRestoring) return;
                 try {
                     BigDecimal balance = Utils.parseBalance(s.toString(), tempLoyaltyCard.balanceType);
                     updateTempState(LoyaltyCardField.balance, balance);
@@ -427,7 +430,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
 
                 updateTempState(LoyaltyCardField.balanceType, currency);
 
-                if (tempLoyaltyCard.balance != null) {
+                if (tempLoyaltyCard.balance != null && !onResuming && !onRestoring) {
                     balanceField.setText(Utils.formatBalanceWithoutCurrencySymbol(tempLoyaltyCard.balance, currency));
                 }
             }
@@ -828,10 +831,18 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         noteFieldEdit.setText(tempLoyaltyCard.note);
         formatDateField(this, validFromField, tempLoyaltyCard.validFrom);
         formatDateField(this, expiryField, tempLoyaltyCard.expiry);
-        formatBalanceCurrencyField(tempLoyaltyCard.balanceType);
         cardIdFieldView.setText(tempLoyaltyCard.cardId);
         barcodeIdField.setText(tempLoyaltyCard.barcodeId != null ? tempLoyaltyCard.barcodeId : getString(R.string.sameAsCardId));
         barcodeTypeField.setText(tempLoyaltyCard.barcodeType != null ? tempLoyaltyCard.barcodeType.prettyName() : getString(R.string.noBarcode));
+
+        // We set the balance here (with onResuming/onRestoring == true) to prevent formatBalanceCurrencyField() from setting it (via onTextChanged),
+        // which can cause issues when switching locale because it parses the balance and e.g. the decimal separator may have changed.
+        formatBalanceCurrencyField(tempLoyaltyCard.balanceType);
+        BigDecimal balance = tempLoyaltyCard.balance == null ? new BigDecimal("0") : tempLoyaltyCard.balance;
+        tempLoyaltyCard = updateTempState(tempLoyaltyCard, LoyaltyCardField.balance, balance);
+        balanceField.setText(Utils.formatBalanceWithoutCurrencySymbol(tempLoyaltyCard.balance, tempLoyaltyCard.balanceType));
+        validBalance = true;
+        Log.d(TAG, "Setting balance to " + balance);
 
         if (groupsChips.getChildCount() == 0) {
             List<Group> existingGroups = DBHelper.getGroups(mDatabase);
@@ -935,6 +946,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         }
 
         onResuming = false;
+        onRestoring = false;
 
         // Fake click on the edit icon to cause the set icon option to pop up if the icon was
         // long-pressed in the view activity
@@ -1249,31 +1261,7 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
                     }
 
                     ColorPickerDialog dialog = dialogBuilder.create();
-                    dialog.setColorPickerDialogListener(new ColorPickerDialogListener() {
-                        @Override
-                        public void onColorSelected(int dialogId, int color) {
-                            updateTempState(LoyaltyCardField.headerColor, color);
-
-                            thumbnailEditIcon.setBackgroundColor(Utils.needsDarkForeground(color) ? Color.BLACK : Color.WHITE);
-                            thumbnailEditIcon.setColorFilter(Utils.needsDarkForeground(color) ? Color.WHITE : Color.BLACK);
-
-                            // Unset image if set
-                            thumbnail.setTag(null);
-
-                            generateIcon(storeFieldEdit.getText().toString());
-                        }
-
-                        @Override
-                        public void onDialogDismissed(int dialogId) {
-                            // Nothing to do, no change made
-                        }
-                    });
                     dialog.show(getSupportFragmentManager(), "color-picker-dialog");
-
-                    setCardImage(targetView, null, false);
-                    mIconRemoved = true;
-                    mIconUnsaved = false;
-
                     return null;
                 });
             }
@@ -1348,6 +1336,29 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
                     })
                     .show();
         }
+    }
+
+    // ColorPickerDialogListener callback used by the ColorPickerDialog created in ChooseCardImage to set the thumbnail color
+    // We don't need to set or check the dialogId since it's only used for that single dialog
+    @Override
+    public void onColorSelected(int dialogId, int color) {
+        // Unset image if set
+        setCardImage(thumbnail, null, false);
+        mIconRemoved = true;
+        mIconUnsaved = false;
+
+        updateTempState(LoyaltyCardField.headerColor, color);
+
+        thumbnailEditIcon.setBackgroundColor(Utils.needsDarkForeground(color) ? Color.BLACK : Color.WHITE);
+        thumbnailEditIcon.setColorFilter(Utils.needsDarkForeground(color) ? Color.WHITE : Color.BLACK);
+
+        generateIcon(storeFieldEdit.getText().toString());
+    }
+
+    // ColorPickerDialogListener callback
+    @Override
+    public void onDialogDismissed(int dialogId) {
+        // Nothing to do, no change made
     }
 
     public static class DatePickerFragment extends DialogFragment
