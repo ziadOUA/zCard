@@ -1,4 +1,4 @@
-package protect.card_locker;
+package com.ziadoua.zcard;
 
 import android.content.Context;
 import android.content.SharedPreferences;
