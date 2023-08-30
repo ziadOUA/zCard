@@ -3,6 +3,7 @@ package com.ziadoua.zcard;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.text.Spanned;
 import android.util.Log;
 
 import androidx.core.text.HtmlCompat;
@@ -50,6 +51,10 @@ public class AboutContent {
         return String.format(context.getString(R.string.app_copyright_fmt), getCurrentYear());
     }
 
+    public String getCopyrightShort() {
+        return context.getString(R.string.app_copyright_short);
+    }
+
     public String getContributors() {
         String contributors;
         try {
@@ -58,6 +63,38 @@ public class AboutContent {
             return "";
         }
         return contributors.replace("\n", "<br />");
+    }
+
+    public String getHistory() {
+        String versionHistory;
+        try {
+            versionHistory = Utils.readTextFile(context, R.raw.changelog)
+                    .replace("# Changelog\n\n", "");
+        }  catch (IOException ignored) {
+            return "";
+        }
+        return Utils.linkify(Utils.basicMDToHTML(versionHistory))
+                .replace("\n", "<br />");
+    }
+
+    public String getLicense() {
+        try {
+            return Utils.readTextFile(context, R.raw.license);
+        }  catch (IOException ignored) {
+            return "";
+        }
+    }
+
+    public String getPrivacy() {
+        String privacyPolicy;
+        try {
+            privacyPolicy = Utils.readTextFile(context, R.raw.privacy)
+                    .replace("# Privacy Policy\n", "");
+        }  catch (IOException ignored) {
+            return "";
+        }
+        return Utils.linkify(Utils.basicMDToHTML(privacyPolicy))
+                .replace("\n", "<br />");
     }
 
     public String getThirdPartyLibraries() {
@@ -105,6 +142,18 @@ public class AboutContent {
         contributorInfo.append(HtmlCompat.fromHtml(String.format(context.getString(R.string.app_resources), getUsedThirdPartyAssets()), HtmlCompat.FROM_HTML_MODE_COMPACT));
 
         return contributorInfo.toString();
+    }
+
+    public Spanned getHistoryInfo() {
+        return HtmlCompat.fromHtml(getHistory(), HtmlCompat.FROM_HTML_MODE_COMPACT);
+    }
+
+    public Spanned getLicenseInfo() {
+        return HtmlCompat.fromHtml(getLicense(), HtmlCompat.FROM_HTML_MODE_LEGACY);
+    }
+
+    public Spanned getPrivacyInfo() {
+        return HtmlCompat.fromHtml(getPrivacy(), HtmlCompat.FROM_HTML_MODE_COMPACT);
     }
 
     public String getVersionHistory() {

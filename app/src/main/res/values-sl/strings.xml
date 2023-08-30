@@ -184,7 +184,6 @@
     <string name="updateBalance">Posodobi stanje</string>
     <string name="failedToRetrieveImageFile">Slikovne datoteke ni bilo mogoče pridobiti</string>
     <string name="credits">Zasluge</string>
-    <string name="action_show_details">Prikaži podrobnosti</string>
     <string name="translate_platform">na Weblate-u</string>
     <string name="options">Možnosti</string>
     <string name="duplicateCard">Podvoji</string>
@@ -192,8 +191,6 @@
     <string name="unarchive">Odpakiraj arhiv</string>
     <string name="archived">Karta arhivirana</string>
     <string name="unarchived">Kartica ni arhivirana</string>
-    <string name="archiveList">Arhiv</string>
-    <string name="noUnarchivedCardsMessage">Ne obstajajo ne arhivirane kartice</string>
     <string name="failedLaunchingPhotoPicker">Ni mogoče najti podprte aplikacije za gledanje slik</string>
     <string name="previousCard">Prejšnje</string>
     <string name="nextCard">Naslednje</string>
@@ -236,8 +233,6 @@
     </plurals>
     <string name="cameraPermissionDeniedTitle">Ni bilo mogoče dostopati do kamere</string>
     <string name="noCameraPermissionDirectToSystemSetting">Catima potrebuje dostop do vaše kamere za skeniranje črtnih kod. Pritisnite tukaj in spremenite nastavitve dovoljenj.</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
-    <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <plurals name="groupCardCount">
         <item quantity="one"><xliff:g>%d</xliff:g> kartica</item>
         <item quantity="two"><xliff:g>%d</xliff:g> kartici</item>
@@ -255,7 +250,6 @@
     <string name="settings_catima_theme">Catima</string>
     <string name="app_contributors">Omogočeno od: <xliff:g id="app_contributors">%s</xliff:g></string>
     <string name="barcodeLongPressMessage">V aplikaciji za gledanje slik lahko odpremo samo slike</string>
-    <string name="action_hide_details">Skrij podrobnosti</string>
     <plurals name="groupCardCountWithArchived">
         <item quantity="one"><xliff:g>%1$d</xliff:g> kartica (<xliff:g id="archivedCount">%2$d</xliff:g> arhivirana)</item>
         <item quantity="two"><xliff:g>%1$d</xliff:g> kartici (<xliff:g id="archivedCount">%2$d</xliff:g> arhivirani)</item>

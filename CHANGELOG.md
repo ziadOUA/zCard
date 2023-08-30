@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased - 130
+## Unreleased - 131
+
+- Move "Archive mode" into "Display options" (previously "Show details") menu
+- Android 13 per-app language support
+- Embed privacy policy, changelog and license in the app
+
+## v2.25.3 - 130 (2023-08-25)
 
 - Minor UI fixes
 - Fix valid from and expiry dates being reset when rotating the card editing screen

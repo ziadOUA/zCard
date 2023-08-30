@@ -19,8 +19,8 @@ android {
         applicationId "com.ziadoua.zcard"
         minSdk 21
         targetSdk 33
-        versionCode 129
-        versionName "2.25.2"
+        versionCode 130
+        versionName "2.25.3"
 
         vectorDrawables.useSupportLibrary true
         multiDexEnabled true
@@ -81,6 +81,10 @@ android {
         lintConfig file('lint.xml')
     }
     namespace 'com.ziadoua.zcard'
+
+    androidResources {
+        generateLocaleConfig true
+    }
 }
 
 dependencies {
@@ -125,5 +129,20 @@ tasks.withType(SpotBugsTask) {
     reports {
         xml.enabled = false
         html.enabled = true
+    }
+}
+
+tasks.register('copyRawResFiles', Copy) {
+    from layout.projectDirectory.file("../CHANGELOG.md"),
+         layout.projectDirectory.file("../PRIVACY.md")
+    into layout.projectDirectory.dir("src/main/res/raw")
+    rename { String fileName -> fileName.toLowerCase() }
+}
+
+project.afterEvaluate {
+    tasks.each { task ->
+        if (task != copyRawResFiles) {
+            task.dependsOn(copyRawResFiles)
+        }
     }
 }
