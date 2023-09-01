@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 //import android.content.res.ColorStateList;
-import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -44,7 +43,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 //import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintSet;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 //import androidx.core.graphics.BlendModeColorFilterCompat;
 //import androidx.core.graphics.BlendModeCompat;
@@ -228,6 +227,10 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
         setContentView(binding.getRoot());
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
+
+        int colorSurfaceContainer = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurfaceContainer, ContextCompat.getColor(this, R.color.md_theme_light_surfaceContainer));
+
+        getWindow().setNavigationBarColor(colorSurfaceContainer);
 
         settings = new Settings(this);
 
@@ -1016,6 +1019,10 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
                 if (getWindow().getInsetsController() != null) {
                     getWindow().getInsetsController().show(WindowInsets.Type.statusBars() | WindowInsets.Type.navigationBars());
                     getWindow().getInsetsController().setSystemBarsBehavior(WindowInsetsController.BEHAVIOR_DEFAULT);
+                    if (!Utils.isDarkModeEnabled(this)) {
+                        getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+                    }
+
                 }
             } else {
                 unsetFullscreenModeSdkLessThan30();
