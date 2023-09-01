@@ -192,7 +192,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorSurfaceContainer"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp"
         app:contentInsetRight="0dp"
