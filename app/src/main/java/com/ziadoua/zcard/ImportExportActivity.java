@@ -6,11 +6,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.view.WindowInsetsController;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -31,6 +33,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.material.color.MaterialColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import com.ziadoua.zcard.async.TaskHandler;
@@ -65,6 +68,18 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (getWindow().getInsetsController() != null) {
+                if (!Utils.isDarkModeEnabled(this)) {
+                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+                }
+
+            }
+        }
+
+        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
+        getWindow().setNavigationBarColor(colorBackground);
 
         Intent fileIntent = getIntent();
         if (fileIntent != null && fileIntent.getType() != null) {

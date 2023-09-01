@@ -11,6 +11,7 @@ import android.database.CursorIndexOutOfBoundsException;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -19,6 +20,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowInsetsController;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
@@ -27,9 +29,11 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.view.ActionMode;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.content.ContextCompat;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.color.MaterialColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
@@ -233,6 +237,18 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
         setSupportActionBar(binding.toolbar);
         groupsTabLayout = binding.groups;
         contentMainBinding = ContentMainBinding.bind(binding.include.getRoot());
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (getWindow().getInsetsController() != null) {
+                if (!Utils.isDarkModeEnabled(this)) {
+                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+                }
+
+            }
+        }
+
+        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
+        getWindow().setNavigationBarColor(colorBackground);
 
         mDatabase = new DBHelper(this).getWritableDatabase();
 

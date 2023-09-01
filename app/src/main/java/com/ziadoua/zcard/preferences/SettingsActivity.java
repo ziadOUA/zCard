@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowInsetsController;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.core.os.LocaleListCompat;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -24,6 +26,7 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+import com.google.android.material.color.MaterialColors;
 import com.ziadoua.zcard.CatimaAppCompatActivity;
 import com.ziadoua.zcard.MainActivity;
 import com.ziadoua.zcard.R;
@@ -45,6 +48,18 @@ public class SettingsActivity extends CatimaAppCompatActivity {
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (getWindow().getInsetsController() != null) {
+                if (!Utils.isDarkModeEnabled(this)) {
+                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+                }
+
+            }
+        }
+
+        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
+        getWindow().setNavigationBarColor(colorBackground);
 
         // Display the fragment as the main content.
         fragment = new SettingsFragment();

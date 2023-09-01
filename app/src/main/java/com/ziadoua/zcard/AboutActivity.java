@@ -1,14 +1,18 @@
 package com.ziadoua.zcard;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Spanned;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowInsetsController;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
+import com.google.android.material.color.MaterialColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 
@@ -30,6 +34,19 @@ public class AboutActivity extends CatimaAppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
         enableToolbarBackButton();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (getWindow().getInsetsController() != null) {
+                if (!Utils.isDarkModeEnabled(this)) {
+                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+                }
+
+            }
+        }
+
+        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
+        getWindow().setNavigationBarColor(colorBackground);
+
 
         TextView copyright = binding.creditsSub;
         copyright.setText(content.getCopyrightShort());
