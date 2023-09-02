@@ -68,5 +68,5 @@ For FidMe you need to select the barcode type for each entry afterwards.
 </p>
 
 <p align="center">
-  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceGPLv3/licencepglv32.svg">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceGPLv3/licencegplv32.svg">
 </p>
