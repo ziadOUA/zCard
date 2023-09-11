@@ -6,11 +6,25 @@ on:
       - main
     paths:
       - 'fastlane/**/title.txt'
+permissions:
+  actions: none
+  checks: none
+  contents: write
+  deployments: none
+  discussions: none
+  id-token: none
+  issues: none
+  packages: none
+  pages: none
+  pull-requests: write
+  repository-projects: none
+  security-events: none
+  statuses: none
 jobs:
   generate-feature-graphic:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4.0.0
     - name: Install requirements
       run: |
         sudo apt-get update
@@ -56,7 +70,7 @@ jobs:
           popd
         done
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v5.0.2
       with:
         title: "Update feature graphic"
         commit-message: "Update feature graphic"
