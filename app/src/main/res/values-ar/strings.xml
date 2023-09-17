@@ -244,7 +244,7 @@
     <string name="report_error">الإبلاغ عن خطأ</string>
     <string name="sort_by_expiry">انقضاء</string>
     <string name="importLoyaltyCardKeychain">الاستيراد من Loyalty Card Keychain</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2023–<xliff:g>%d</xliff:g> ziadOUA والمساهمون</string>
     <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="importLoyaltyCardKeychainMessage">حدد ملفك <i>LoyaltyCardKeychain.csv</i> التصدير من Loyalty Card Keychain للاستيراد.
 \nقم بإنشائه من قائمة الاستيراد / التصدير في Loyalty Card Keychain بالضغط على تصدير هناك أولاً.</string>
@@ -288,8 +288,7 @@
     <string name="permissionReadCardsDescription">اقرأ بطاقتك مع جميع التفاصيل، بما فيه الملاحضات والصور</string>
     <string name="settings_display_barcode_max_brightness_summary">ظروري لعمل بعض الماسحات الضوئية</string>
     <string name="permissionReadCardsLabel">اقرأ بطاقات كاتيما</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">حقوق النشر © 2019–<xliff:g>%d</xliff:g> Sylvia van Os والمساهمون</string>
-    <string name="app_copyright_short">حقوق النشر © Sylvia van Os والمساهمون</string>
+    <string name="app_copyright_short">حقوق النشر © ziadOUA والمساهمون</string>
     <string name="openFrontImageInGalleryApp">افتح الصورة الأمامية في تطبيق المعرض</string>
     <string name="show_name_below_image_thumbnail">إظهار الاسم أسفل الصورة المصغرة</string>
     <string name="show_validity">إظهار الصلاحية</string>
