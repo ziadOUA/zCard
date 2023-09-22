@@ -100,7 +100,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
     ImageView barcodeRenderTarget;
     int mainImageIndex = 0;
     List<ImageType> imageTypes;
-    boolean isBarcodeSupported = true;
 
     static final String STATE_IMAGEINDEX = "imageIndex";
     static final String STATE_FULLSCREEN = "isFullscreen";
@@ -299,7 +298,6 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
             bundle.putBoolean(LoyaltyCardEditActivity.BUNDLE_UPDATE, true);
             intent.putExtras(bundle);
             startActivity(intent);
-            finish();
         });
         binding.fabEdit.bringToFront();
 
@@ -543,13 +541,18 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
 
         Log.i(TAG, "To view card: " + loyaltyCardId);
 
-        // The brightness value is on a scale from [0, ..., 1], where
-        // '1' is the brightest. We attempt to maximize the brightness
-        // to help barcode readers scan the barcode.
         Window window = getWindow();
         if (window != null) {
+            // Hide the keyboard if still shown (could be the case when returning from edit activity
+            window.setSoftInputMode(
+                    WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
+            );
+
             WindowManager.LayoutParams attributes = window.getAttributes();
 
+            // The brightness value is on a scale from [0, ..., 1], where
+            // '1' is the brightest. We attempt to maximize the brightness
+            // to help barcode readers scan the barcode.
             if (settings.useMaxBrightnessDisplayingBarcode()) {
                 attributes.screenBrightness = 1F;
             }
@@ -591,12 +594,15 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
 
         setBottomAppBarButtonState();
 
+        boolean isBarcodeSupported;
         if (format != null && !format.isSupported()) {
             isBarcodeSupported = false;
 
             Toast.makeText(this, getString(R.string.unsupportedBarcodeType), Toast.LENGTH_LONG).show();
         } else if (format == null) {
             isBarcodeSupported = false;
+        } else {
+            isBarcodeSupported = true;
         }
 
         imageTypes = new ArrayList<>();

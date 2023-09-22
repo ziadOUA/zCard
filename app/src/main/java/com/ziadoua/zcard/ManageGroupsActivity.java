@@ -126,26 +126,6 @@ public class ManageGroupsActivity extends CatimaAppCompatActivity implements Gro
         return super.onOptionsItemSelected(item);
     }
 
-    private void setGroupNameError(EditText input) {
-        String string = sanitizeAddGroupNameField(input.getText());
-
-        if (string.length() == 0) {
-            input.setError(getString(R.string.group_name_is_empty));
-            return;
-        }
-
-        if (DBHelper.getGroup(mDatabase, string) != null) {
-            input.setError(getString(R.string.group_name_already_in_use));
-            return;
-        }
-
-        input.setError(null);
-    }
-
-    private String sanitizeAddGroupNameField(CharSequence s) {
-        return s.toString().trim();
-    }
-
     private void createGroup() {
         AlertDialog.Builder builder = new MaterialAlertDialogBuilder(this);
 
@@ -175,7 +155,7 @@ public class ManageGroupsActivity extends CatimaAppCompatActivity implements Gro
 
         // Buttons
         builder.setPositiveButton(getString(R.string.ok), (dialog, which) -> {
-            DBHelper.insertGroup(mDatabase, sanitizeAddGroupNameField(input.getText()));
+            DBHelper.insertGroup(mDatabase, input.getText().toString().trim());
             updateGroupList();
         });
         builder.setNegativeButton(getString(R.string.cancel), (dialog, which) -> dialog.cancel());
@@ -184,15 +164,15 @@ public class ManageGroupsActivity extends CatimaAppCompatActivity implements Gro
         // Now that the dialog exists, we can bind something that affects the OK button
         input.addTextChangedListener(new SimpleTextWatcher() {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String string = sanitizeAddGroupNameField(input.getText());
+                String groupName = s.toString().trim();
 
-                if (string.length() == 0) {
+                if (groupName.length() == 0) {
                     input.setError(getString(R.string.group_name_is_empty));
                     dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
                     return;
                 }
 
-                if (DBHelper.getGroup(mDatabase, string) != null) {
+                if (DBHelper.getGroup(mDatabase, groupName) != null) {
                     input.setError(getString(R.string.group_name_already_in_use));
                     dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
                     return;
