@@ -2,7 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
     <string name="settings_display_barcode_max_brightness">Gör streckkodsvyn ljusare</string>
     <string name="settings_keep_screen_on">Håll skärmen påslagen</string>
-    <string name="enterBarcodeInstructions">Ange ID:t och välj antingen streckkodstyp nedan, eller \"Det finns ingen streckkod\".</string>
     <string name="importFidmeMessage">Välj den exporterade <i>fidme-export-request-xxxxxx.zip</i> från FidMe som du vill importera och välj streckkodstyper manuellt efteråt.
 \nSkapa den från din FidMe-profil först genom att välja \"Data Protection\" och sen trycka på \"Extract my data\".</string>
     <string name="importOptionApplicationExplanation">Använd vilken app som helst eller den filhanterare du föredrar för att öppna en fil.</string>
@@ -99,8 +98,6 @@
     <string name="importExportHelp">Säkerhetskopiering av din data möjliggör förflyttning av den till en annan enhet.</string>
     <string name="importExport">Importera/Exportera</string>
     <string name="noCardExistsError">Kunde inte hitta det kortet</string>
-    <string name="noCardIdError">Inget ID har angivits</string>
-    <string name="noStoreError">Inget namn har angivits</string>
     <string name="noCardsMessage">Lägg till ett kort först</string>
     <string name="cardShortcut">Kort-genväg</string>
     <string name="addCardTitle">Lägg till kort</string>
@@ -127,7 +124,6 @@
     <string name="unstar">Ta bort från favoriter</string>
     <string name="star">Lägg till i favoriter</string>
     <string name="noBarcode">Ingen streckkod</string>
-    <string name="barcodeNoBarcode">Det finns ingen streckkod</string>
     <string name="barcodeType">Streckkodstyp</string>
     <string name="cardId">Kort-ID</string>
     <string name="storeName">Namn</string>
@@ -152,7 +148,6 @@
     <string name="app_license">Copyleftad fri programvara, under GPLv3+-licens</string>
     <string name="app_resources">Fria tredjepartsresurser: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Fria tredjepartsbibliotek: <xliff:g id="app_libraries_list">%s</xliff:g></string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> verkar inte vara ett giltigt saldo.</string>
     <string name="balance">Saldo</string>
     <string name="balanceSentence">Saldo: <xliff:g>%s</xliff:g></string>
     <string name="settings_disable_lockscreen_while_viewing_card">Förhindra skärmlåsning</string>

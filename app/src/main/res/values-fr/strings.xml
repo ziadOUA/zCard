@@ -18,8 +18,6 @@
     <string name="scanCardBarcode">Scanner le code-barres</string>
     <string name="cardShortcut">Raccourci de carte</string>
     <string name="noCardsMessage">Ajoutez d’abord une carte</string>
-    <string name="noStoreError">Aucun nom saisi</string>
-    <string name="noCardIdError">Aucun identifiant saisi</string>
     <string name="noCardExistsError">Impossible de trouver cette carte</string>
     <string name="importExport">Importer/Exporter</string>
     <string name="exportName">Exporter</string>
@@ -54,13 +52,11 @@
     <string name="settings_light_theme">Clair</string>
     <string name="settings_system_theme">Système</string>
     <string name="settings_theme">Thème</string>
-    <string name="enterBarcodeInstructions">Entrez l’identifiant, et choisissez un type de code-barres ci-dessous, ou « Il n’y a pas de code-barres ».</string>
     <string name="app_copyright_old">Basé sur Loyalty Card Keychain
 \ncopyright © 2016-2020 Branden Archer</string>
     <string name="exportOptionExplanation">Les données seront exportées vers l’emplacement de votre choix.</string>
     <string name="failedParsingImportUriError">Impossible d’analyser l’URI d’importation</string>
     <string name="share">Partager</string>
-    <string name="barcodeNoBarcode">Il n’y a pas de code-barres</string>
     <string name="barcodeType">Type de code-barres</string>
     <string name="noMatchingGiftCards">Aucun résultat. Essayez de modifier votre recherche.</string>
     <string name="action_search">Rechercher</string>
@@ -76,7 +72,7 @@
     <string name="leaveWithoutSaveConfirmation">Quitter sans enregistrer \?</string>
     <string name="leaveWithoutSaveTitle">Quitter</string>
     <string name="failedOpeningFileManager">Installez d’abord un gestionnaire de fichiers.</string>
-    <string name="addManually">Entrer manuellement l’identifiant</string>
+    <string name="addManually">Entrez le code-barres manuellement</string>
     <string name="moveDown">Descendre</string>
     <string name="moveUp">Monter</string>
     <plurals name="groupCardCount">
@@ -92,7 +88,6 @@
     <string name="privacy_policy">Politique de confidentialité</string>
     <string name="app_loyalty_card_keychain">Loyalty Card Keychain</string>
     <string name="chooseImportType">Importer les données depuis</string>
-    <string name="parsingBalanceFailed"><xliff:g xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%s</xliff:g> ne semble pas être un solde valide.</string>
     <string name="points">Points</string>
     <string name="currency">Devise</string>
     <string name="balance">Solde</string>
@@ -205,7 +200,7 @@
     <string name="group_edit">Modifier le groupe</string>
     <string name="group_name_already_in_use">Nom de groupe déjà utilisé</string>
     <string name="group_updated">Groupe mis à jour</string>
-    <string name="group_name_is_empty">Le nom du groupe ne peut pas être vide</string>
+    <string name="group_name_is_empty">Le nom de groupe ne peut pas être vide</string>
     <string name="setIcon">Définir la vignette</string>
     <string name="selectColor">Sélectionnez la couleur</string>
     <string name="translate_platform">sur Weblate</string>
@@ -275,7 +270,7 @@
     <string name="show_validity">Afficher la validité</string>
     <string name="show_balance">Afficher le solde</string>
     <string name="permissionReadCardsLabel">Lire les cartes Catima</string>
-    <string name="permissionReadCardsDescription">Lisez vos cartes et tous ses détails, y compris les notes et les images</string>
+    <string name="permissionReadCardsDescription">lisez vos cartes Catima et tous leurs détails, y compris les notes et les images</string>
     <string name="settings_allow_content_provider_read_title">Autoriser d\'autres applications à accéder à mes données</string>
     <string name="settings_allow_content_provider_read_summary">Les applications devront toujours demander une autorisation pour obtenir l\'accès</string>
     <string name="settings_display_barcode_max_brightness_summary">Nécessaire au fonctionnement de certains scanneurs</string>
@@ -290,4 +285,12 @@
     <string name="show_archived_cards">Afficher les cartes archivées</string>
     <string name="view_online">Voir en ligne</string>
     <string name="action_display_options">Options d’affichage</string>
+    <string name="card_id_must_not_be_empty">L’identifiant de la carte ne peut pas être vide</string>
+    <string name="balanceParsingFailed">Solde invalide</string>
+    <string name="add_a_card_in_a_different_way">Ajouter une carte d’une autre manière</string>
+    <string name="manually_enter_barcode_instructions">Entrez le numéro d’identification ou le texte sur votre carte et appuyez sur le code-barres qui ressemble à celui sur votre carte.</string>
+    <string name="action_more_options">Plus d’options</string>
+    <string name="enter_card_id">Entrez le numéro d’identification ou le texte sur votre carte</string>
+    <string name="addWithoutBarcode">Ajouter une carte sans code-barres</string>
+    <string name="field_must_not_be_empty">Le champ ne peut pas être vide</string>
 </resources>

@@ -30,13 +30,13 @@
             app:layout_constraintBottom_toTopOf="@+id/barcodeIdLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="@string/enterBarcodeInstructions" />
+            android:text="@string/manually_enter_barcode_instructions" />
         <LinearLayout
             android:id="@+id/barcodeIdLayout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/noBarcode"
+            app:layout_constraintTop_toBottomOf="@+id/explanationText"
+            app:layout_constraintBottom_toTopOf="@+id/barcodes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/explanationText">
@@ -57,24 +57,11 @@
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
-        <Button
-            android:id="@+id/noBarcode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:enabled="false"
-            android:text="@string/barcodeNoBarcode"
-            app:layout_constraintBottom_toTopOf="@+id/barcodes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/barcodeIdLayout" />
         <ListView
             android:id="@+id/barcodes"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="10dp"
-            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/barcodeIdLayout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

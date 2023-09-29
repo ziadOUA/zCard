@@ -19,8 +19,6 @@
     <string name="scanCardBarcode">Skann strekkoden</string>
     <string name="cardShortcut">Kort-snarvei</string>
     <string name="noCardsMessage">Legg til et kort først</string>
-    <string name="noStoreError">Navn ikke angitt</string>
-    <string name="noCardIdError">Ingen ID innskrevet</string>
     <string name="noCardExistsError">Fant ikke det kortet</string>
     <string name="importExport">Importer/eksporter</string>
     <string name="exportName">Eksporter</string>
@@ -45,7 +43,6 @@
     <string name="about_title_fmt">Om <xliff:g id="app_name">%s</xliff:g></string>
     <string name="debug_version_fmt">Versjon: <xliff:g id="version">%s</xliff:g></string>
     <string name="selectBarcodeTitle">Velg strekkode</string>
-    <string name="enterBarcodeInstructions">Skriv inn kortets ID, og enten velg strekkodetypen nedenfor, eller «Det er ingen strekkode».</string>
     <string name="copy_to_clipboard_toast">ID kopiert til utklippstavle</string>
     <string name="thumbnailDescription">Miniatyrbilde</string>
     <string name="settings">Innstillinger</string>
@@ -61,7 +58,6 @@
 \nopphavsrett 2016–2020 Branden Archer</string>
     <string name="failedParsingImportUriError">Kunne ikke tolke importerings-URI</string>
     <string name="share">Del</string>
-    <string name="barcodeNoBarcode">Det er ingen strekkode</string>
     <string name="noMatchingGiftCards">Ingen resultater. Prøv å endre søket.</string>
     <string name="action_search">Søk</string>
     <string name="starImage">Favorittstjerne</string>
@@ -92,7 +88,6 @@
     <string name="expiryDate">Utløpsdato</string>
     <string name="expiryStateSentenceExpired">Utløpt: <xliff:g>%s</xliff:g></string>
     <string name="moveBarcodeToTopOfScreen">Flytt strekkoden til toppen av skjermen</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> ser ikke ut til å være en gyldig saldo.</string>
     <string name="points">Poeng</string>
     <string name="currency">Valuta</string>
     <string name="balance">Saldo</string>

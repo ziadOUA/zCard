@@ -26,7 +26,6 @@
     <string name="editCardTitle">Ubah Kartu</string>
     <string name="addCardTitle">Tambah Kartu</string>
     <string name="scanCardBarcode">Pindai Barcode</string>
-    <string name="barcodeNoBarcode">Tidak ada barcode</string>
     <string name="cancel">Batalkan</string>
     <string name="importExport">Impor/Ekspor</string>
     <string name="settings_theme">Tema</string>
@@ -79,8 +78,6 @@
     <string name="copy_to_clipboard">Salin ID ke papan klip</string>
     <string name="sendLabel">Kirim…</string>
     <string name="noCardsMessage">Tambah kartu terlebih dahulu</string>
-    <string name="noStoreError">Nama masih kosong</string>
-    <string name="noCardIdError">Tidak ada ID yang dimasukkan</string>
     <string name="noCardExistsError">Tidak dapat menemukan kartu</string>
     <string name="failedParsingImportUriError">Tidak dapat memparsing impor URI</string>
     <string name="exportName">Ekspor</string>
@@ -109,7 +106,6 @@
     <string name="debug_version_fmt">Versi: <xliff:g id="version">%s</xliff:g></string>
     <string name="app_libraries">Pustaka pihak ketiga gratis: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="app_resources">Sumber daya pihak ketiga gratis: <xliff:g id="app_resources_list">%s</xliff:g></string>
-    <string name="enterBarcodeInstructions">Masukkan ID, dan pilih jenis barcode di bawah ini, atau \"Tidak ada barcode\".</string>
     <string name="copy_to_clipboard_toast">ID disalin ke papan klip</string>
     <string name="thumbnailDescription">Gambar tampilan</string>
     <string name="starImage">Favorit</string>
@@ -141,7 +137,6 @@
     <string name="never">Tidak pernah</string>
     <string name="moveBarcodeToTopOfScreen">Pindah barcode ke bagian paling depan</string>
     <string name="points">Poin</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> sepertinya bukan saldo yang valid.</string>
     <string name="app_loyalty_card_keychain">Gantungan kunci kartu kesetiaan</string>
     <string name="privacy_policy">Kebijakan Privasi</string>
     <string name="privacy_policy_popup_text">Pemberitahuan kebijakan privasi (diperlukan oleh beberapa toko aplikasi): 

@@ -20,8 +20,6 @@
     <string name="addCardTitle">कार्ड जोड़ें</string>
     <string name="noCardsMessage">पहले एक कार्ड जोड़ें</string>
     <string name="card_ids_copied">कॉपी की गई आईडी</string>
-    <string name="noStoreError">कोई नाम दर्ज नहीं</string>
-    <string name="noCardIdError">कोई पहचान पत्र (आईडी दर्ज नहीं) की गई</string>
     <string name="noCardExistsError">वह कार्ड नहीं मिला</string>
     <string name="importExport">आयात / निर्यात</string>
     <string name="exportName">निर्यात</string>
@@ -70,7 +68,6 @@
     <string name="importOptionApplicationExplanation">फाइल खोलने के लिए कोई भी ऐप या अपना पसंदिता फाइल मैनेजर का इस्तेमाल करे।</string>
     <string name="settings_theme">विषय</string>
     <string name="barcodeType">बारकोड का प्रकार</string>
-    <string name="barcodeNoBarcode">कोई बारकोड नहीं है</string>
     <string name="noBarcode">बारकोड नहीं है</string>
     <string name="copy_to_clipboard">पहचान पत्र(आई डी) को क्लिपबोर्ड में कॉपी करें</string>
     <string name="scanCardBarcode">बारकोड स्कैन करें</string>
@@ -79,7 +76,6 @@
     <string name="importExportHelp">तथ्य (डाटा) को बैकअप करना हमें उसे दूसरे डिवाइस में भेजने देता है|</string>
     <string name="barcodeImageDescriptionWithType"><xliff:g>%s</xliff:g> का बारकोड</string>
     <string name="settings_disable_lockscreen_while_viewing_card">स्क्रीन को लॉक होने से रोकें</string>
-    <string name="enterBarcodeInstructions">अपनी आई डी लिखें तथा या तो बारकोड प्रकार चुनें, या फिर कोई बारकोड नहीं है चुनें|</string>
     <string name="settings_lock_on_opening_orientation">कार्ड खोलते समय प्रयोग करि गयी अवस्था को प्रतिबन्ध करें</string>
     <string name="intent_import_card_from_url_share_text">मैं तुम्हें एक कार्ड भेजना चाहता हूँ</string>
     <string name="selectBarcodeTitle">बारकोड चुनें</string>
@@ -138,7 +134,6 @@
     <string name="addManually">मैन्युअली आई डी दर्ज करें</string>
     <string name="editGroup">समूह संपादन: <xliff:g>%s</xliff:g></string>
     <string name="points">अंक</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> एक वैध शेष राशि नहीं है.</string>
     <string name="chooseImportType">यहाँ से डेटा का आयात करें</string>
     <string name="privacy_policy">निजता नीति</string>
     <string name="importCatima">कैटिमा से आयात करें</string>

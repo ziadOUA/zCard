@@ -18,8 +18,6 @@
     <string name="scanCardBarcode">Skeniraj črtno kodo</string>
     <string name="cardShortcut">Bližnjica do kartice</string>
     <string name="noCardsMessage">Najprej dodajte kartico</string>
-    <string name="noStoreError">Ime ni bilo vnešeno</string>
-    <string name="noCardIdError">ID številka kartice ni bila vnešena</string>
     <string name="noCardExistsError">Te kartice zvestobe ni bilo mogoče najti</string>
     <string name="importExport">Uvozi/izvozi</string>
     <string name="exportName">Izvozi</string>
@@ -68,7 +66,6 @@
     <string name="intent_import_card_from_url_share_text">Z vami želim deliti kartico</string>
     <string name="settings_disable_lockscreen_while_viewing_card">Prepreči zaklepanje zaslona</string>
     <string name="settings_keep_screen_on">Ohranite zaslon vklopljen</string>
-    <string name="enterBarcodeInstructions">Vnesite ID kartice in spodaj izberite vrsto črtne kode ali izbiro \"Ta kartica nima črtne kode\".</string>
     <string name="settings_dark_theme">Temno</string>
     <string name="settings_light_theme">Svetlo</string>
     <string name="settings_system_theme">Sistem</string>
@@ -83,7 +80,6 @@
     <string name="unstar">Odstrani iz priljubljenih</string>
     <string name="star">Dodaj med priljubljene</string>
     <string name="noBarcode">Brez črtne kode</string>
-    <string name="barcodeNoBarcode">Ni črtne kode</string>
     <string name="barcodeType">Vrsta črtne kode</string>
     <string name="noMatchingGiftCards">Brez rezultata iskanja. Poskusite spremeniti iskalni niz.</string>
     <string name="action_search">Iskanje</string>
@@ -144,7 +140,6 @@
     <string name="yes">Da</string>
     <string name="frontImageDescription">Prednja stran</string>
     <string name="backImageDescription">Zadnja stran</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> ni veljavno stanje.</string>
     <string name="setBackImage">Nastavi sliko sprednje strani</string>
     <string name="setFrontImage">Nastavi sliko sprednje strani</string>
     <string name="photos">Fotografije</string>
@@ -268,4 +263,9 @@
     <string name="validFromDate">Velja od</string>
     <string name="anyDate">Katerikoli datum</string>
     <string name="chooseValidFromDate">Izberite datum začetka veljavnosti</string>
+    <string name="permissionReadCardsDescription">preberite svoje kartice Catima in vse podrobnosti, vključno z opombami in slikami</string>
+    <string name="settings_display_barcode_max_brightness_summary">Potrebno za delovanje nekaterih skenerjev</string>
+    <string name="app_copyright_short">Copyright © Sylvia van Os in drugi sodelujoči</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Copyright © 2019–<xliff:g>%d</xliff:g> Sylvia van Os in drugi sodelujoči</string>
+    <string name="permissionReadCardsLabel">Preberite kartice Catima</string>
 </resources>

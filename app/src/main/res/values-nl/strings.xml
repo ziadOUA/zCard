@@ -8,7 +8,6 @@
     <string name="note">Aantekening</string>
     <string name="cardId">Kaartnummer</string>
     <string name="barcodeType">Soort barcode</string>
-    <string name="barcodeNoBarcode">Er is geen barcode</string>
     <string name="cancel">Annuleren</string>
     <string name="save">Opslaan</string>
     <string name="edit">Bewerken</string>
@@ -23,8 +22,6 @@
     <string name="scanCardBarcode">Barcode scannen</string>
     <string name="cardShortcut">Kaartsnelkoppeling</string>
     <string name="noCardsMessage">Voeg eerst een kaart toe</string>
-    <string name="noStoreError">Geen naam ingevoerd</string>
-    <string name="noCardIdError">Geen id ingevoerd</string>
     <string name="noCardExistsError">De kaart is niet aangetroffen</string>
     <string name="failedParsingImportUriError">Kan de import-uri niet verwerken</string>
     <string name="importExport">Importeren/Exporteren</string>
@@ -50,7 +47,6 @@
     <string name="about_title_fmt">Over <xliff:g id="app_name">%s</xliff:g></string>
     <string name="debug_version_fmt">Versie: <xliff:g id="version">%s</xliff:g></string>
     <string name="selectBarcodeTitle">Barcode toevoegen</string>
-    <string name="enterBarcodeInstructions">Voer de kaart-id in en kies daarna het soort barcode of druk op “Deze kaart heeft geen barcode”.</string>
     <string name="copy_to_clipboard_toast">De kaart-id is gekopieerd naar het klembord</string>
     <string name="thumbnailDescription">Miniatuurvoorbeeld</string>
     <string name="settings">Instellingen</string>
@@ -72,7 +68,7 @@
 \ncopyright ©2016–2020 Branden Archer</string>
     <string name="unstar">Verwijderen uit favorieten</string>
     <string name="star">Toevoegen aan favorieten</string>
-    <string name="addManually">ID handmatig invoeren</string>
+    <string name="addManually">Barcode handmatig invoeren</string>
     <string name="leaveWithoutSaveConfirmation">Weet je zeker dat je niet wilt opslaan\?</string>
     <string name="leaveWithoutSaveTitle">Afsluiten</string>
     <string name="moveDown">Omlaag verplaatsen</string>
@@ -92,7 +88,6 @@
     <string name="expiryStateSentence">Vervalt op <xliff:g>%s</xliff:g></string>
     <string name="expiryStateSentenceExpired">Verlopen: <xliff:g>%s</xliff:g></string>
     <string name="moveBarcodeToTopOfScreen">Barcode verplaatsen naar bovenkant van scherm</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> lijkt geen geldig saldo te zijn.</string>
     <string name="points">Aantal punten</string>
     <string name="currency">Valuta</string>
     <string name="balance">Saldo</string>
@@ -284,4 +279,12 @@
     <string name="action_display_options">Weergave-instellingen</string>
     <string name="view_online">Online bekijken</string>
     <string name="show_archived_cards">Gearchiveerde kaarten tonen</string>
+    <string name="card_id_must_not_be_empty">Voer een kaart-id in</string>
+    <string name="balanceParsingFailed">Ongeldig saldo</string>
+    <string name="add_a_card_in_a_different_way">Kaart op andere manier toevoegen</string>
+    <string name="manually_enter_barcode_instructions">Voer het id-nummer of de tekst van je kaart in en druk vervolgens op de barcode die het meest overeenkomt.</string>
+    <string name="action_more_options">Meer opties</string>
+    <string name="enter_card_id">Voer het id-nummer of de tekst van je kaart in</string>
+    <string name="addWithoutBarcode">Kaart zonder barcode toevoegen</string>
+    <string name="field_must_not_be_empty">Dit veld is vereist</string>
 </resources>

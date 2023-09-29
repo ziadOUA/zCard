@@ -57,7 +57,6 @@
     <string name="privacy_policy">Gizlilik Politikası</string>
     <string name="app_loyalty_card_keychain">Loyalty Card Keychain</string>
     <string name="chooseImportType">Verileri şuradan içe aktar</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> geçerli bir bakiye gibi görünmüyor.</string>
     <string name="points">Puan</string>
     <string name="currency">Para birimi</string>
     <string name="balance">Bakiye</string>
@@ -104,7 +103,6 @@
     <string name="starImage">Sık kullanılan yıldız</string>
     <string name="thumbnailDescription">Küçük resim</string>
     <string name="copy_to_clipboard_toast">Numara panoya kopyalandı</string>
-    <string name="enterBarcodeInstructions">Numarasını girin ve aşağıdan barkod türünü veya “Barkod yok” seçeneğini seçin.</string>
     <string name="selectBarcodeTitle">Barkod Seç</string>
     <string name="app_resources">Özgür üçüncü taraf kaynakları: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Özgür üçüncü taraf kütüphaneleri: <xliff:g id="app_libraries_list">%s</xliff:g></string>
@@ -136,8 +134,6 @@
     <string name="importExport">İçe/Dışa aktar</string>
     <string name="failedParsingImportUriError">İçe aktarma URI\'si ayrıştırılamadı</string>
     <string name="noCardExistsError">Bu kart bulunamadı</string>
-    <string name="noCardIdError">Numara girilmedi</string>
-    <string name="noStoreError">Ad girilmedi</string>
     <string name="barcodeImageDescriptionWithType"><xliff:g>%s</xliff:g> barkod görüntüsü</string>
     <string name="card_ids_copied">Numara(lar) kopyalandı</string>
     <string name="copy_to_clipboard">Numarayı panoya kopyala</string>
@@ -168,7 +164,6 @@
     <string name="unstar">Sık kullanılanlardan kaldır</string>
     <string name="star">Sık kullanılanlara ekle</string>
     <string name="noBarcode">Barkod yok</string>
-    <string name="barcodeNoBarcode">Barkod yok</string>
     <string name="barcodeType">Barkod türü</string>
     <string name="note">Not</string>
     <string name="storeName">Ad</string>

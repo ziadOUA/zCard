@@ -14,7 +14,6 @@
     <string name="note">Feljegyzés</string>
     <string name="cardId">Kártyaazonosító</string>
     <string name="barcodeType">Vonalkód típusa</string>
-    <string name="barcodeNoBarcode">Nincs vonalkód</string>
     <string name="noBarcode">Nincs vonalkód</string>
     <string name="star">Hozzáadás a kedvencekhez</string>
     <string name="unstar">Eltávolítás a kedvencekből</string>
@@ -36,7 +35,6 @@
     <string name="addCardTitle">Kártya hozzáadása</string>
     <string name="scanCardBarcode">Vonalkód leolvasása</string>
     <string name="cardShortcut">Kártya parancsikon</string>
-    <string name="noStoreError">Nincs név megadva</string>
     <string name="failedParsingImportUriError">Az importálási URI nem értelmezhető</string>
     <string name="importExport">Importálás/exportálás</string>
     <string name="exportName">Exportálás</string>
@@ -53,7 +51,6 @@
     <string name="deleteTitle">Kártya törlése</string>
     <string name="card_ids_copied">Azonosító(k) másolva</string>
     <string name="barcodeImageDescriptionWithType">A(z) <xliff:g>%s</xliff:g> vonalkód képe</string>
-    <string name="noCardIdError">Nincs azonosító megadva</string>
     <string name="noCardExistsError">A kártya nem található</string>
     <string name="importStocardMessage">Válassza ki az importálandó <i>***.zip</i> Stocard export fájlt.
 \nAz adatainak exportálását a support@stocardapp.com címre írt levélben kérheti.</string>
@@ -89,7 +86,6 @@
     <string name="debug_version_fmt">Verzió: <xliff:g id="version">%s</xliff:g></string>
     <string name="app_resources">Szabad külső erőforrások: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="selectBarcodeTitle">Vonalkód kiválasztása</string>
-    <string name="enterBarcodeInstructions">Írja be az azonosítót, majd válasszon egy vonalkódot, vagy a „Nincs vonalkód” lehetőséget.</string>
     <string name="copy_to_clipboard_toast">Azonosító vágólapra másolva</string>
     <string name="starImage">Kedvencek csillag</string>
     <string name="settings">Beállítások</string>
@@ -127,7 +123,6 @@
     <string name="balance">Egyenleg</string>
     <string name="currency">Pénznem</string>
     <string name="points">Pontok</string>
-    <string name="parsingBalanceFailed">A(z) <xliff:g>%s</xliff:g> nem tűnik valós egyenlegnek.</string>
     <string name="app_loyalty_card_keychain">Hűségkártya-kulcstartó</string>
     <string name="privacy_policy">Adatvédelmi irányelvek</string>
     <string name="accept">Elfogadás</string>

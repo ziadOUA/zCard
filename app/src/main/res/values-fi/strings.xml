@@ -30,7 +30,6 @@
     <string name="privacy_policy">Tietosuojakäytäntö</string>
     <string name="app_loyalty_card_keychain">Kanta-asiakaskortin avainnippu</string>
     <string name="chooseImportType">Tuo tietoja kohteesta</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> ei vaikuta olevan kelvollinen saldo.</string>
     <string name="points">Pisteet</string>
     <string name="currency">Valuutta</string>
     <string name="balance">Saldo</string>
@@ -76,7 +75,6 @@
     <string name="starImage">Suosikkitähti</string>
     <string name="thumbnailDescription">Pienoiskuva</string>
     <string name="copy_to_clipboard_toast">ID-tunnus kopioitu leikepöydälle</string>
-    <string name="enterBarcodeInstructions">Syötä ID-tunnus ja valitse sen viivakoodityyppi, tai valitse \"Ei viivakoodia\".</string>
     <string name="selectBarcodeTitle">Valitse viivakoodi</string>
     <string name="app_resources">Vapaat kolmannen osapuolen resurssit: <xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_libraries">Vapaat kolmannen osapuolen kirjastot: <xliff:g id="app_libraries_list">%s</xliff:g></string>
@@ -85,7 +83,7 @@
     <string name="app_license">Copyleft (käyttäjänoikeus) - vapaa ohjelmisto, lisenssi GPLv3+</string>
     <string name="app_copyright_old">Perustuu Loyalty Card Keychain -sovellukseen
 \ntekijänoikeus © 2016–2020 Branden Archer</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Tekijänoikeus © 2023–<xliff:g>%d</xliff:g> ziadOUA</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Tekijänoikeus © 2023–<xliff:g>%d</xliff:g> ziadOUA ja avustajat</string>
     <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Tekijänoikeus © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="about">Tietoja</string>
     <string name="importOptionApplicationButton">Käytä toista sovellusta</string>
@@ -108,8 +106,6 @@
     <string name="importExport">Tuo/vie</string>
     <string name="failedParsingImportUriError">Tuonnin URI: n jäsentäminen epäonnistui</string>
     <string name="noCardExistsError">Tätä korttia ei löytynyt</string>
-    <string name="noCardIdError">ID-tunnusta ei annettu</string>
-    <string name="noStoreError">Nimeä ei annettu</string>
     <string name="card_ids_copied">Kopioidut tunnukset</string>
     <string name="noCardsMessage">Lisää ensin kortti</string>
     <string name="cardShortcut">Kortin pikakuvake</string>
@@ -128,7 +124,6 @@
     <string name="unstar">Poista suosikeista</string>
     <string name="star">Lisää suosikkeihin</string>
     <string name="noBarcode">Ei viivakoodia</string>
-    <string name="barcodeNoBarcode">Viivakoodia ei ole</string>
     <string name="barcodeType">Viivakoodin tyyppi</string>
     <string name="cardId">Kortin ID-tunnus</string>
     <string name="note">Lisätieto</string>
@@ -280,4 +275,7 @@
     <string name="show_validity">Näytä kelpoisuus</string>
     <string name="settings_category_title_cards">Kortit</string>
     <string name="settings_category_title_general">Yleiset</string>
+    <string name="action_display_options">Näyttövalinnat</string>
+    <string name="app_copyright_short">Tekijänoikeus © Sylvia van Os ja avustajat</string>
+    <string name="show_archived_cards">Näytä arkistoidut kortit</string>
 </resources>

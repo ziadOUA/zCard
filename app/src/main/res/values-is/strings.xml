@@ -10,7 +10,6 @@
     <string name="cancel">Hætta</string>
     <string name="noMatchingGiftCards">Engar niðurstöður. Prófaðu að breyta leitarorði.</string>
     <string name="storeName">Nafnið</string>
-    <string name="barcodeNoBarcode">Þetta kort hefur ekki strikamerkið</string>
     <string name="star">Bæta við eftirlæti</string>
     <string name="unstar">Fjarlægja frá eftirlæti</string>
     <string name="save">Sparaðu</string>
@@ -26,7 +25,6 @@
     <string name="noCardsMessage">Bæta kort fyrstu</string>
     <string name="exportFailedTitle">Flytja mistókst</string>
     <string name="exportSuccessfulTitle">Flutt</string>
-    <string name="noStoreError">Ekkert nafn slegið</string>
     <string name="noCardExistsError">Gæti ekki fundið kort</string>
     <string name="failedParsingImportUriError">Get ekki lesið inn URI</string>
     <string name="exportName">Flytja</string>

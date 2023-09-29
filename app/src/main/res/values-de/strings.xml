@@ -22,8 +22,6 @@
     <string name="scanCardBarcode">Barcode scannen</string>
     <string name="cardShortcut">Shortcut zu einer Karte</string>
     <string name="noCardsMessage">Füge zuerst eine Karte hinzu</string>
-    <string name="noStoreError">Kein Name eingegeben</string>
-    <string name="noCardIdError">Keine ID eingegeben</string>
     <string name="noCardExistsError">Diese Karte konnte nicht gefunden werden</string>
     <string name="importExport">Import/Export</string>
     <string name="exportName">Export</string>
@@ -58,13 +56,11 @@
     <string name="settings_light_theme">Hell</string>
     <string name="settings_system_theme">System</string>
     <string name="settings_theme">Farbschema</string>
-    <string name="enterBarcodeInstructions">Gib die ID ein und wähle unten entweder einen Barcodetyp oder „Es gibt keinen Barcode“.</string>
     <string name="app_copyright_old">Basierend auf Loyalty Card Keychain
 \nCopyright © 2016-2020 Branden Archer</string>
     <string name="exportOptionExplanation">Die Daten werden an einen Ort deiner Wahl geschrieben.</string>
     <string name="failedParsingImportUriError">Die Import-URI konnte nicht verarbeitet werden</string>
     <string name="share">Teilen</string>
-    <string name="barcodeNoBarcode">Es gibt keinen Barcode</string>
     <string name="barcodeType">Barcodetyp</string>
     <string name="starImage">Favoritenstern</string>
     <string name="deleteConfirmationGroup">Gruppe löschen?</string>
@@ -77,7 +73,7 @@
     <string name="leaveWithoutSaveTitle">Beenden</string>
     <string name="failedOpeningFileManager">Installiere zuerst einen Dateimanager.</string>
     <string name="noBarcode">Kein Barcode</string>
-    <string name="addManually">ID manuell eingeben</string>
+    <string name="addManually">Code manuell eingeben</string>
     <string name="moveDown">Nach unten verschieben</string>
     <string name="moveUp">Nach oben verschieben</string>
     <plurals name="groupCardCount">
@@ -87,7 +83,6 @@
     <string name="groupsList">Gruppen: <xliff:g>%s</xliff:g></string>
     <string name="app_loyalty_card_keychain">Loyalty Card Keychain</string>
     <string name="chooseImportType">Daten importieren aus</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g> scheint kein gültiges Guthaben zu sein.</string>
     <string name="points">Punkte</string>
     <string name="currency">Währung</string>
     <string name="balance">Guthaben</string>
@@ -284,4 +279,11 @@
     <string name="action_display_options">Anzeigeoptionen</string>
     <string name="show_archived_cards">Zeige archivierte Karten</string>
     <string name="app_copyright_short">Copyright © ziadOUA und Mitwirkende</string>
+    <string name="card_id_must_not_be_empty">Kartennummer darf nicht leer sein</string>
+    <string name="balanceParsingFailed">Ungültiges Guthaben</string>
+    <string name="add_a_card_in_a_different_way">Karte anders hinzufügen</string>
+    <string name="action_more_options">Mehr Optionen</string>
+    <string name="enter_card_id">Gib die Codenummer oder Ziffernfolge deiner Karte an</string>
+    <string name="addWithoutBarcode">Eine Karde ohne Code hinzufügen</string>
+    <string name="field_must_not_be_empty">Feld darf nicht leer sein</string>
 </resources>

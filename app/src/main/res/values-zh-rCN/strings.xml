@@ -39,7 +39,6 @@
     <string name="privacy_policy">隐私政策</string>
     <string name="app_loyalty_card_keychain">会员卡卡包</string>
     <string name="chooseImportType">数据导入源</string>
-    <string name="parsingBalanceFailed"><xliff:g>%s</xliff:g>似乎不是有效的余额。</string>
     <string name="points">积分</string>
     <string name="currency">货币</string>
     <string name="balance">余额</string>
@@ -76,7 +75,6 @@
     <string name="settings">设置</string>
     <string name="thumbnailDescription">缩略图</string>
     <string name="copy_to_clipboard_toast">已复制卡号到剪贴板</string>
-    <string name="enterBarcodeInstructions">输入卡号，并从下面选择其条码类型，或选择“无条码”。</string>
     <string name="selectBarcodeTitle">选择条码</string>
     <string name="app_resources">第三方自由资源：<xliff:g id="app_resources_list">%s</xliff:g></string>
     <string name="app_license">本软件为自由软件，使用 GPLv3+ 许可证</string>
@@ -103,8 +101,6 @@
     <string name="importExport">导入/导出</string>
     <string name="failedParsingImportUriError">无法解析导入 URI</string>
     <string name="noCardExistsError">找不到卡片</string>
-    <string name="noCardIdError">未输入卡号</string>
-    <string name="noStoreError">未输入卡片名称</string>
     <string name="card_ids_copied">已复制卡号</string>
     <string name="noCardsMessage">请先添加一张卡片</string>
     <string name="cardShortcut">卡片快捷键</string>
@@ -122,7 +118,6 @@
     <string name="cancel">取消</string>
     <string name="star">添加到收藏</string>
     <string name="noBarcode">无条形码</string>
-    <string name="barcodeNoBarcode">无可用条形码</string>
     <string name="barcodeType">条形码类型</string>
     <string name="cardId">卡号</string>
     <string name="note">备注</string>
@@ -263,7 +258,7 @@
     <string name="permissionReadCardsLabel">读取 Catima 卡</string>
     <string name="settings_allow_content_provider_read_summary">应用程序仍然需要请求权限</string>
     <string name="settings_allow_content_provider_read_title">允许其他应用程序访问我的数据</string>
-    <string name="permissionReadCardsDescription">读取你的卡片及其所有细节，包括笔记和图像</string>
+    <string name="permissionReadCardsDescription">读取你的 Catima 卡片及其所有细节，包括笔记和图像</string>
     <string name="settings_keep_screen_on_summary">在查看卡片时禁止屏幕超时</string>
     <string name="settings_oled_dark_summary">减少 OLED 显示屏上的电池使用量</string>
     <string name="settings_category_title_privacy">隐私</string>
@@ -276,4 +271,12 @@
     <string name="show_archived_cards">显示已存档的卡片</string>
     <string name="app_copyright_short">版权所有 © Sylvia van Os 及其贡献者们</string>
     <string name="view_online">在线查看</string>
+    <string name="card_id_must_not_be_empty">卡片 ID 不能为空</string>
+    <string name="balanceParsingFailed">无效余额</string>
+    <string name="add_a_card_in_a_different_way">以不同方式添加卡片</string>
+    <string name="manually_enter_barcode_instructions">输入卡片上的 ID 号或文本，并按下和你卡片上的条形码看上去差不多的条形码。</string>
+    <string name="action_more_options">更多选项</string>
+    <string name="enter_card_id">输入卡片上的 ID 号或文本</string>
+    <string name="addWithoutBarcode">不使用条形码添加卡片</string>
+    <string name="field_must_not_be_empty">字段不能为空</string>
 </resources>
