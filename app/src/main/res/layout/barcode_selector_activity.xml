@@ -38,8 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/explanationText"
             app:layout_constraintBottom_toTopOf="@+id/barcodes"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/explanationText">
+            app:layout_constraintStart_toStartOf="parent">
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/storeNameField"
                 style="@style/ModifiedTextField"
@@ -64,7 +63,6 @@
             app:layout_constraintTop_toBottomOf="@+id/barcodeIdLayout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/noBarcode" />
+            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

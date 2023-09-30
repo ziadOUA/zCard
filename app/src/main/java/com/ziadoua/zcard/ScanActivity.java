@@ -1,7 +1,7 @@
 package com.ziadoua.zcard;
 
-import static protect.card_locker.BarcodeSelectorActivity.BARCODE_CONTENTS;
-import static protect.card_locker.BarcodeSelectorActivity.BARCODE_FORMAT;
+import static com.ziadoua.zcard.BarcodeSelectorActivity.BARCODE_CONTENTS;
+import static com.ziadoua.zcard.BarcodeSelectorActivity.BARCODE_FORMAT;
 
 import android.Manifest;
 import android.app.Activity;
