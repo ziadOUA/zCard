@@ -74,7 +74,7 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
     private View mNoGroupCardsText;
     private TabLayout groupsTabLayout;
 
-    private Runnable mSwapLoyaltyCardListCursor;
+    private Runnable mUpdateLoyaltyCardListRunnable;
 
     private ActivityResultLauncher<Intent> mBarcodeScannerLauncher;
     private ActivityResultLauncher<Intent> mSettingsLauncher;
@@ -252,13 +252,8 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
 
         mDatabase = new DBHelper(this).getWritableDatabase();
 
-        mSwapLoyaltyCardListCursor = () -> {
-            Group group = null;
-            if (mGroup != null) {
-                group = (Group) mGroup;
-            }
-
-            mAdapter.swapCursor(DBHelper.getLoyaltyCardCursor(mDatabase, mFilter, group, mOrder, mOrderDirection, mAdapter.showingArchivedCards() ? DBHelper.LoyaltyCardArchiveFilter.All : DBHelper.LoyaltyCardArchiveFilter.Unarchived));
+        mUpdateLoyaltyCardListRunnable = () -> {
+            updateLoyaltyCardList(false);
         };
 
         groupsTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -293,7 +288,7 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
         mNoGroupCardsText = contentMainBinding.noGroupCardsText;
         mCardList = contentMainBinding.list;
 
-        mAdapter = new LoyaltyCardCursorAdapter(this, null, this, mSwapLoyaltyCardListCursor);
+        mAdapter = new LoyaltyCardCursorAdapter(this, null, this, mUpdateLoyaltyCardListRunnable);
         mCardList.setAdapter(mAdapter);
         registerForContextMenu(mCardList);
 
@@ -448,7 +443,12 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
     }
 
     private void updateLoyaltyCardList(boolean updateCount) {
-        mSwapLoyaltyCardListCursor.run();
+        Group group = null;
+        if (mGroup != null) {
+            group = (Group) mGroup;
+        }
+
+        mAdapter.swapCursor(DBHelper.getLoyaltyCardCursor(mDatabase, mFilter, group, mOrder, mOrderDirection, mAdapter.showingArchivedCards() ? DBHelper.LoyaltyCardArchiveFilter.All : DBHelper.LoyaltyCardArchiveFilter.Unarchived));
 
         if (updateCount) {
             updateLoyaltyCardCount();
