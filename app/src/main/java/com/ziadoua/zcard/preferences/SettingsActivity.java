@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.WindowInsetsController;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
@@ -71,6 +72,13 @@ public class SettingsActivity extends CatimaAppCompatActivity {
         if (savedInstanceState != null) {
             fragment.mReloadMain = savedInstanceState.getBoolean(RELOAD_MAIN_STATE);
         }
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finishSettingsActivity();
+            }
+        });
     }
 
     @Override
@@ -89,11 +97,6 @@ public class SettingsActivity extends CatimaAppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        finishSettingsActivity();
     }
 
     private void finishSettingsActivity() {
