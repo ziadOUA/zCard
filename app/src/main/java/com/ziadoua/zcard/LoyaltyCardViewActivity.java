@@ -51,6 +51,7 @@ import androidx.core.content.FileProvider;
 //import androidx.core.graphics.ColorUtils;
 //import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 //import androidx.core.widget.TextViewCompat;
 
@@ -604,6 +605,21 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
 
         binding.cardIdView.setText(loyaltyCard.cardId);
 
+        // Display full text on click in case it doesn't fit in a single line
+        binding.cardIdView.setOnClickListener(v -> {
+            TextView cardIdView = new TextView(LoyaltyCardViewActivity.this);
+            cardIdView.setText(loyaltyCard.cardId);
+            cardIdView.setTextIsSelectable(true);
+            int contentPadding = getResources().getDimensionPixelSize(R.dimen.alert_dialog_content_padding);
+            cardIdView.setPadding(contentPadding, contentPadding / 2, contentPadding, 0);
+
+            AlertDialog.Builder builder = new MaterialAlertDialogBuilder(LoyaltyCardViewActivity.this);
+            builder.setTitle(R.string.cardId);
+            builder.setView(cardIdView);
+            builder.setPositiveButton(R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss());
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        });
         setBottomAppBarButtonState();
 
         boolean isBarcodeSupported;
