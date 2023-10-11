@@ -239,18 +239,6 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
         groupsTabLayout = binding.groups;
         contentMainBinding = ContentMainBinding.bind(binding.include.getRoot());
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            if (getWindow().getInsetsController() != null) {
-                if (!Utils.isDarkModeEnabled(this)) {
-                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
-                }
-
-            }
-        }
-
-        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
-        getWindow().setNavigationBarColor(colorBackground);
-
         mDatabase = new DBHelper(this).getWritableDatabase();
 
         mUpdateLoyaltyCardListRunnable = () -> {

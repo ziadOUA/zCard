@@ -69,18 +69,6 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            if (getWindow().getInsetsController() != null) {
-                if (!Utils.isDarkModeEnabled(this)) {
-                    getWindow().getInsetsController().setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS, WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
-                }
-
-            }
-        }
-
-        int colorBackground = MaterialColors.getColor(this, com.google.android.material.R.attr.colorSurface, ContextCompat.getColor(this, R.color.md_theme_light_surface));
-        getWindow().setNavigationBarColor(colorBackground);
-
         Intent fileIntent = getIntent();
         if (fileIntent != null && fileIntent.getType() != null) {
             chooseImportType(false, fileIntent.getData());
