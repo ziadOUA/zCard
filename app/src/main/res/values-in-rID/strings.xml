@@ -75,7 +75,6 @@
     <string name="noMatchingGiftCards">Tidak menemukan apapun. Cobalah untuk mengubah pencarian anda.</string>
     <string name="noBarcode">Bukan barcode</string>
     <string name="confirm">Konfirmasi</string>
-    <string name="copy_to_clipboard">Salin ID ke papan klip</string>
     <string name="sendLabel">Kirim…</string>
     <string name="noCardsMessage">Tambah kartu terlebih dahulu</string>
     <string name="noCardExistsError">Tidak dapat menemukan kartu</string>
@@ -106,7 +105,6 @@
     <string name="debug_version_fmt">Versi: <xliff:g id="version">%s</xliff:g></string>
     <string name="app_libraries">Pustaka pihak ketiga gratis: <xliff:g id="app_libraries_list">%s</xliff:g></string>
     <string name="app_resources">Sumber daya pihak ketiga gratis: <xliff:g id="app_resources_list">%s</xliff:g></string>
-    <string name="copy_to_clipboard_toast">ID disalin ke papan klip</string>
     <string name="thumbnailDescription">Gambar tampilan</string>
     <string name="starImage">Favorit</string>
     <string name="settings_light_theme">Terang</string>
@@ -157,7 +155,6 @@
 \nBuat dengan menekan Ekspor di Vault Voucher terlebih dahulu.</string>
     <string name="unsupportedBarcodeType">Jenis barcode ini belum dapat ditampilkan. Ini mungkin didukung di versi aplikasi yang lebih baru.</string>
     <string name="wrongValueForBarcodeType">Nilai tidak berlaku untuk jenis barcode yang dipilih</string>
-    <string name="copy_to_clipboard_multiple_toast">ID disalin ke papan klip</string>
     <string name="frontImageDescription">Gambar depan</string>
     <string name="backImageDescription">Gambar belakang</string>
     <string name="updateBarcodeQuestionTitle">Perbarui barcode?</string>
@@ -174,7 +171,6 @@
     <string name="and_data_usage">dan penggunaan data</string>
     <string name="on_google_play">di Google Play</string>
     <string name="cardShortcut">Pintasan Kartu</string>
-    <string name="card_ids_copied">ID(s) yang disalin</string>
     <string name="barcodeImageDescriptionWithType">Gambar <xliff:g>%s</xliff:g> barcode</string>
     <string name="importExportHelp">Mencadangkan data anda akan memungkinkan memindahkannya ke perangkat lain.</string>
     <plurals name="selectedCardCount">
@@ -258,7 +254,7 @@
     <string name="show_name_below_image_thumbnail">Tampilkan nama di bawah thumbnail gambar</string>
     <string name="show_note">Tampilkan catatan</string>
     <string name="permissionReadCardsLabel">Baca Kartu Catima</string>
-    <string name="permissionReadCardsDescription">Baca kartu Anda dan semua detailnya, termasuk catatan dan gambar</string>
+    <string name="permissionReadCardsDescription">baca kartu Anda dan semua detailnya, termasuk catatan dan gambar</string>
     <string name="settings_allow_content_provider_read_title">Izinkan aplikasi lain mengakses data saya</string>
     <string name="settings_allow_content_provider_read_summary">Aplikasi masih harus meminta izin untuk diberikan akses</string>
     <string name="settings_keep_screen_on_summary">Menonaktifkan batas waktu layar saat melihat kartu</string>
