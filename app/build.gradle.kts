@@ -27,7 +27,7 @@ android {
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled = true
 
-        resourceConfigurations += listOf("ar", "bg", "bn", "bn-rIN", "bs", "cs", "da", "de", "el-rGR", "en", "eo", "es", "es-rAR", "fi", "fr", "he-rIL", "hi", "hr", "hu", "in-rID", "is", "it", "ja", "ko", "lt", "lv", "nb-rNO", "nl", "oc", "pl", "pt", "ro-rRO", "ru", "sk", "sl", "sv", "tr", "uk", "vi", "zh-rCN", "zh-rTW")
+        resourceConfigurations += listOf("ar", "bg", "bn", "bn-rIN", "bs", "cs", "da", "de", "el-rGR", "en", "eo", "es", "es-rAR", "fi", "fr", "he-rIL", "hi", "hr", "hu", "in-rID", "is", "it", "ja", "ko", "lt", "lv", "nb-rNO", "nl", "oc", "pl", "pt-rPT", "ro-rRO", "ru", "sk", "sl", "sv", "tr", "uk", "vi", "zh-rCN", "zh-rTW")
     }
 
     buildTypes {
@@ -92,7 +92,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.6")
     implementation("androidx.palette:palette:1.0.0")
     implementation("androidx.preference:preference:1.2.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
     implementation("com.github.yalantis:ucrop:2.2.8-native")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
@@ -102,7 +102,7 @@ dependencies {
     // Third-party
     implementation("com.journeyapps:zxing-android-embedded:4.3.0@aar")
     implementation("com.google.zxing:core:3.5.2")
-    implementation("org.apache.commons:commons-csv:1.9.0")
+    implementation("org.apache.commons:commons-csv:1.10.0")
     implementation("com.jaredrummler:colorpicker:1.1.0")
     implementation("net.lingala.zip4j:zip4j:2.11.5")
 
