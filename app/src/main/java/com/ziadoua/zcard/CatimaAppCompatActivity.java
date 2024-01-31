@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
+import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowInsetsControllerCompat;
 
 public class CatimaAppCompatActivity extends AppCompatActivity {
-    protected boolean activityOverridesNavBarColor = false;
-
     @Override
     protected void attachBaseContext(Context base) {
         // Apply chosen language
@@ -33,29 +31,18 @@ public class CatimaAppCompatActivity extends AppCompatActivity {
         super.onPostCreate(savedInstanceState);
         // material 3 designer does not consider status bar colors
         // XXX changing this in onCreate causes issues with the splash screen activity, so doing this here
-        Window window = getWindow();
-        if (window != null) {
-            boolean darkMode = Utils.isDarkModeEnabled(this);
-            if (Build.VERSION.SDK_INT >= 23) {
-                View decorView = window.getDecorView();
-                WindowInsetsControllerCompat wic = new WindowInsetsControllerCompat(window, decorView);
-                wic.setAppearanceLightStatusBars(!darkMode);
-                window.setStatusBarColor(Color.TRANSPARENT);
-            } else {
-                // icons are always white back then
-                window.setStatusBarColor(darkMode ? Color.TRANSPARENT : Color.argb(127, 0, 0, 0));
-            }
+        boolean darkMode = Utils.isDarkModeEnabled(this);
+        if (Build.VERSION.SDK_INT >= 23) {
+            View decorView = getWindow().getDecorView();
+            WindowInsetsControllerCompat wic = new WindowInsetsControllerCompat(getWindow(), decorView);
+            wic.setAppearanceLightStatusBars(!darkMode);
+//            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        } else {
+            // icons are always white back then
+//            getWindow().setStatusBarColor(darkMode ? Color.TRANSPARENT : Color.argb(127, 0, 0, 0));
         }
         // XXX android 9 and below has a nasty rendering bug if the theme was patched earlier
         Utils.postPatchColors(this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (!activityOverridesNavBarColor) {
-            Utils.setNavigationBarColor(this, null, Utils.resolveBackgroundColor(this), !Utils.isDarkModeEnabled(this));
-        }
     }
 
     protected void enableToolbarBackButton() {

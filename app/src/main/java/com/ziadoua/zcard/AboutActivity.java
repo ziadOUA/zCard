@@ -9,7 +9,7 @@ import android.view.WindowInsetsController;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 
@@ -35,6 +35,10 @@ public class AboutActivity extends CatimaAppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
         enableToolbarBackButton();
+
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+        });
 
         TextView copyright = binding.creditsSub;
         copyright.setText(content.getCopyrightShort());
@@ -68,13 +72,13 @@ public class AboutActivity extends CatimaAppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        content.destroy();
-        clearClickListeners();
-        binding = null;
-    }
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        content.destroy();
+//        clearClickListeners();
+//        binding = null;
+//    }
 
     private void bindClickListeners() {
         binding.versionHistory.setOnClickListener(this::showHistory);
@@ -103,7 +107,11 @@ public class AboutActivity extends CatimaAppCompatActivity {
     }
 
     private void showCredits() {
-        showHTML(R.string.credits, content.getContributorInfo(), null);
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.credits)
+                .setMessage(content.getContributorInfo())
+                .setPositiveButton(R.string.ok, null)
+                .show();
     }
 
     private void showHistory(View view) {
@@ -118,7 +126,7 @@ public class AboutActivity extends CatimaAppCompatActivity {
         showHTML(R.string.privacy_policy, content.getPrivacyInfo(), view);
     }
 
-    private void showHTML(@StringRes int title, final Spanned text, @Nullable View view) {
+    private void showHTML(@StringRes int title, final Spanned text, View view) {
         int dialogContentPadding = getResources().getDimensionPixelSize(R.dimen.alert_dialog_content_padding);
         TextView textView = new TextView(this);
         textView.setText(text);
@@ -126,21 +134,12 @@ public class AboutActivity extends CatimaAppCompatActivity {
         ScrollView scrollView = new ScrollView(this);
         scrollView.addView(textView);
         scrollView.setPadding(dialogContentPadding, dialogContentPadding / 2, dialogContentPadding, 0);
-
-        // Create dialog
-        MaterialAlertDialogBuilder materialAlertDialogBuilder = new MaterialAlertDialogBuilder(this);
-        materialAlertDialogBuilder
+        new MaterialAlertDialogBuilder(this)
                 .setTitle(title)
                 .setView(scrollView)
-                .setPositiveButton(R.string.ok, null);
-
-        // Add View online button if an URL is linked to this view
-        if (view != null && view.getTag() != null) {
-            materialAlertDialogBuilder.setNeutralButton(R.string.view_online, (dialog, which) -> openExternalBrowser(view));
-        }
-
-        // Show dialog
-        materialAlertDialogBuilder.show();
+                .setPositiveButton(R.string.ok, null)
+                .setNeutralButton(R.string.view_online, (dialog, which) -> openExternalBrowser(view))
+                .show();
     }
 
     private void openExternalBrowser(View view) {

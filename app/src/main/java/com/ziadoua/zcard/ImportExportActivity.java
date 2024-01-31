@@ -69,6 +69,10 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
 
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+        });
+
         Intent fileIntent = getIntent();
         if (fileIntent != null && fileIntent.getType() != null) {
             chooseImportType(false, fileIntent.getData());

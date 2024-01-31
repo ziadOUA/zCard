@@ -50,6 +50,10 @@ public class ManageGroupsActivity extends CatimaAppCompatActivity implements Gro
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
 
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+        });
+
         mDatabase = new DBHelper(this).getWritableDatabase();
     }
 

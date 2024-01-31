@@ -29,7 +29,9 @@
         <item name="alertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog.Monet</item>
 
         <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeCloseDrawable">@drawable/home_arrow_back_white</item>
         <item name="popupMenuBackground">@drawable/rounded</item>
+        <item name="android:statusBarColor">@color/md_theme_light_surface</item>
     </style>
 
     <style name="ThemeOverlay.App.MaterialAlertDialog.Monet" parent="ThemeOverlay.Material3.MaterialAlertDialog">

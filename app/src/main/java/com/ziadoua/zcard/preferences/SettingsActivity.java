@@ -50,6 +50,10 @@ public class SettingsActivity extends CatimaAppCompatActivity {
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
 
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+        });
+
         // Display the fragment as the main content.
         fragment = new SettingsFragment();
         getSupportFragmentManager().beginTransaction()

@@ -1,5 +1,8 @@
 package com.ziadoua.zcard;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
@@ -18,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowInsetsController;
 import android.widget.CheckBox;
 import android.widget.Toast;
@@ -207,6 +211,11 @@ public class MainActivity extends CatimaAppCompatActivity implements LoyaltyCard
         setSupportActionBar(binding.toolbar);
         groupsTabLayout = binding.groups;
         contentMainBinding = ContentMainBinding.bind(binding.include.getRoot());
+
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+            groupsTabLayout.setBackgroundColor(backgroundColor);
+        });
 
         mDatabase = new DBHelper(this).getWritableDatabase();
 

@@ -329,8 +329,14 @@ public class LoyaltyCardEditActivity extends CatimaAppCompatActivity implements 
         binding = LoyaltyCardEditActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         toolbar = binding.toolbar;
+        tabs = binding.tabs;
         setSupportActionBar(toolbar);
         enableToolbarBackButton();
+
+        binding.appbar.addLiftOnScrollListener((elevation, backgroundColor) -> {
+            getWindow().setStatusBarColor(backgroundColor);
+            tabs.setBackgroundColor(backgroundColor);
+        });
 
         mDatabase = new DBHelper(this).getWritableDatabase();
 
