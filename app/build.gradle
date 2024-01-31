@@ -13,14 +13,14 @@ spotbugs {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.ziadoua.zcard"
         minSdk 21
-        targetSdk 33
-        versionCode 131
-        versionName "2.26.0"
+        targetSdk 34
+        versionCode 132
+        versionName "2.27.0"
 
         vectorDrawables.useSupportLibrary true
         multiDexEnabled true
@@ -42,6 +42,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 
     bundle {

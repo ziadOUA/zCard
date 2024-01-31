@@ -14,11 +14,11 @@ spotbugs {
 }
 
 android {
-    namespace = "protect.card_locker"
+    namespace = "com.ziadoua.zcard"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "me.hackerchick.catima"
+        applicationId = "com.ziadoua.zcard"
         minSdk = 21
         targetSdk = 33
         versionCode = 132
@@ -37,9 +37,11 @@ android {
                 getDefaultProguardFile("proguard-android.txt"),
                 "proguard-rules.pro"
             )
+            resValue("string", "app_name", "zCard")
         }
         debug {
             applicationIdSuffix = ".debug"
+            resValue("string", "app_name", "zCard Debug")
         }
     }
 
