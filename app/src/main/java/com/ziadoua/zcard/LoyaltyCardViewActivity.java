@@ -48,7 +48,6 @@ import androidx.core.graphics.BlendModeColorFilterCompat;
 import androidx.core.graphics.BlendModeCompat;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 
 import com.google.android.material.color.MaterialColors;
@@ -547,7 +546,8 @@ public class LoyaltyCardViewActivity extends CatimaAppCompatActivity implements 
 
 
     @Override
-    public void onResume() {
+    protected void onResume() {
+        activityOverridesNavBarColor = true;
         super.onResume();
 
         Log.i(TAG, "To view card: " + loyaltyCardId);
