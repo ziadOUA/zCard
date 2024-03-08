@@ -326,7 +326,6 @@
                 tools:visibility="visible">
                 <!-- Front image -->
                 <LinearLayout
-                    android:id="@+id/frontImageHolder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -335,7 +334,9 @@
                     android:layout_marginTop="10dp">
                     <!-- Front image -->
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
+                        android:id="@+id/frontImageHolder"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         style="?attr/materialCardViewFilledStyle"
                         android:layout_gravity="center_vertical"
@@ -364,7 +365,9 @@
                     android:layout_marginBottom="20dp">
                     <!-- Back image -->
                     <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/backImageHolder"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         style="?attr/materialCardViewFilledStyle"
                         android:layout_gravity="center_vertical"

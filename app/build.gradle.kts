@@ -15,14 +15,14 @@ spotbugs {
 
 android {
     namespace = "com.ziadoua.zcard"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.ziadoua.zcard"
         minSdk = 21
-        targetSdk = 33
-        versionCode = 132
-        versionName = "2.27.0"
+        targetSdk = 34
+        versionCode = 133
+        versionName = "2.28.0"
 
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled = true
@@ -94,8 +94,8 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.7")
     implementation("androidx.palette:palette:1.0.0")
     implementation("androidx.preference:preference:1.2.1")
-    implementation("com.google.android.material:material:1.10.0")
-    implementation("com.github.yalantis:ucrop:2.2.8-native")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.github.yalantis:ucrop:2.2.8")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
     // Splash Screen

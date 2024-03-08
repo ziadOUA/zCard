@@ -87,7 +87,7 @@
     <string name="app_license">Вільне копілефт програмне забезпечення, ліцензоване GPLv3+</string>
     <string name="app_copyright_old">Створено на основі Loyalty Card Keychain
 \nавторські права © 2016–2020 Branden Archer</string>
-    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2023–<xliff:g>%d</xliff:g> ziadOUA та вкладники</string>
+    <string name="app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2023–<xliff:g>%d</xliff:g> ziadOUA та співавтори</string>
     <string name="old_app_copyright_fmt" tools:ignore="PluralsCandidate">Авторські права © 2019–<xliff:g>%d</xliff:g> Sylvia van Os</string>
     <string name="about">Про застосунок</string>
     <string name="importOptionApplicationButton">Використати інший застосунок</string>
@@ -132,7 +132,7 @@
     <string name="action_search">Пошук</string>
     <string name="turn_flashlight_off">Вимкнути спалах</string>
     <string name="turn_flashlight_on">Увімкнути спалах</string>
-    <string name="failedGeneratingShareURL">Збій створення URL обміну. Будь ласка повідомте про цю помилку.</string>
+    <string name="failedGeneratingShareURL">Збій створення URL обміну. Будь ласка повідомте про це.</string>
     <string name="passwordRequired">Будь ласка введіть пароль</string>
     <string name="takePhoto">Зробити світлину</string>
     <string name="removeImage">Видалити зображення</string>
@@ -141,9 +141,9 @@
     <string name="photos">Світлини</string>
     <string name="backImageDescription">Тильна сторона</string>
     <string name="frontImageDescription">Лицьова сторона</string>
-    <string name="importStocardMessage">Виберіть експорт <i> ***.zip </i> зі Stocard для імпорту.
+    <string name="importStocardMessage">Виберіть експорт <i> ***.zip </i> з Stocard для імпорту. 
 \nОтримайте його, надіславши електронного листа support@stocardapp.com з проханням експортувати ваші дані.</string>
-    <string name="importStocard">Імпорт із Stocard</string>
+    <string name="importStocard">Імпорт з Stocard</string>
     <plurals name="selectedCardCount">
         <item quantity="one">Обрано: <xliff:g>%d</xliff:g></item>
         <item quantity="few">Обрані: <xliff:g>%d</xliff:g></item>
@@ -248,7 +248,7 @@
     <string name="failedToRetrieveImageFile">Збій доступу до файлу зображення</string>
     <string name="barcodeLongPressMessage">Галерея може відкривати лише зображення</string>
     <string name="importCards">Імпорт карток</string>
-    <string name="updateBalanceTitle">Скільки витратили\?</string>
+    <string name="updateBalanceTitle">Скільки витратили?</string>
     <string name="updateBalanceHint">Введіть суму</string>
     <string name="currentBalanceSentence">Поточний баланс: <xliff:g>%s</xliff:g></string>
     <string name="newBalanceSentence">Новий баланс: <xliff:g>%s</xliff:g></string>
@@ -281,13 +281,13 @@
     <string name="settings_keep_screen_on_summary">Вимикає тайм-аут екрана під час перегляду картки</string>
     <string name="settings_disable_lockscreen_while_viewing_card_summary">Вимикає блокування екрана під час перегляду картки</string>
     <string name="settings_allow_content_provider_read_title">Дозволити іншим застосункам доступ до моїх даних</string>
-    <string name="settings_oled_dark_summary">Зменшує використання батареї на екранах з OLED</string>
+    <string name="settings_oled_dark_summary">Зменшує використання батареї на OLED екранах</string>
     <string name="settings_category_title_cards">Картки</string>
     <string name="settings_category_title_general">Загальні</string>
     <string name="settings_category_title_privacy">Конфіденційність</string>
     <string name="view_online">Переглянути онлайн</string>
-    <string name="action_display_options">Налаштування дисплея</string>
-    <string name="app_copyright_short">Авторські права © Sylvia van Os та вкладники</string>
+    <string name="action_display_options">Параметри відображення</string>
+    <string name="app_copyright_short">Авторські права © Sylvia van Os та співавтори</string>
     <string name="show_archived_cards">Показати архівовані картки</string>
     <string name="card_id_must_not_be_empty">ID картки не повинен бути порожнім</string>
     <string name="balanceParsingFailed">Неправильний баланс</string>
@@ -299,4 +299,7 @@
     <string name="field_must_not_be_empty">Поле вводу не повинно бути порожнім</string>
     <string name="app_name">Catima</string>
     <string name="settings_follow_sensor_orientation">Завжди обертати (ігнорувати системні налаштування)</string>
+    <string name="add_manually_warning_message">У деяких магазинах значення штрихкоду відрізняється від номера, записаного на картці. Через це введення штрихкоду вручну може не завжди спрацювати. Наполегливо рекомендуємо відсканувати штрихкод за допомогою камери. Ви все ще хочете продовжити?</string>
+    <string name="continue_">Продовжити</string>
+    <string name="add_manually_warning_title">Рекомендується відсканувати</string>
 </resources>

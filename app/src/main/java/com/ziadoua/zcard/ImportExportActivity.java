@@ -1,10 +1,8 @@
 package com.ziadoua.zcard;
 
-import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,7 +14,17 @@ import android.view.WindowInsetsController;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -133,16 +141,19 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
             builder.setTitle(R.string.exportPassword);
 
             FrameLayout container = new FrameLayout(ImportExportActivity.this);
-            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.leftMargin = 50;
-            params.rightMargin = 50;
+
+            final TextInputLayout textInputLayout = new TextInputLayout(ImportExportActivity.this);
+            textInputLayout.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            params.setMargins(50, 10, 50, 0);
+            textInputLayout.setLayoutParams(params);
 
             final EditText input = new EditText(ImportExportActivity.this);
             input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-            input.setLayoutParams(params);
             input.setHint(R.string.exportPasswordHint);
 
-            container.addView(input);
+            textInputLayout.addView(input);
+            container.addView(textInputLayout);
             builder.setView(container);
             builder.setPositiveButton(R.string.ok, (dialogInterface, i) -> {
                 exportPassword = input.getText().toString();
@@ -155,7 +166,6 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
             });
             builder.setNegativeButton(R.string.cancel, (dialogInterface, i) -> dialogInterface.cancel());
             builder.show();
-
         });
 
         // Check that there is a file manager available
@@ -327,9 +337,21 @@ public class ImportExportActivity extends CatimaAppCompatActivity {
         AlertDialog.Builder builder = new MaterialAlertDialogBuilder(this);
         builder.setTitle(R.string.passwordRequired);
 
-        final EditText input = new EditText(this);
+        FrameLayout container = new FrameLayout(ImportExportActivity.this);
+
+        final TextInputLayout textInputLayout = new TextInputLayout(ImportExportActivity.this);
+        textInputLayout.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(50, 10, 50, 0);
+        textInputLayout.setLayoutParams(params);
+
+        final EditText input = new EditText(ImportExportActivity.this);
         input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        builder.setView(input);
+        input.setHint(R.string.exportPasswordHint);
+
+        textInputLayout.addView(input);
+        container.addView(textInputLayout);
+        builder.setView(container);
 
         builder.setPositiveButton(R.string.ok, (dialogInterface, i) -> {
             openFileForImport(uri, input.getText().toString().toCharArray());

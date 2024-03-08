@@ -15,13 +15,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.color.MaterialColors;
-
-import java.math.BigDecimal;
-import java.text.DateFormat;
-import java.util.ArrayList;
-
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
@@ -31,6 +24,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.ziadoua.zcard.databinding.LoyaltyCardLayoutBinding;
 import com.ziadoua.zcard.preferences.Settings;
+
+import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.util.ArrayList;
+
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.color.MaterialColors;
 
 public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCursorAdapter.LoyaltyCardListItemViewHolder> {
     private int mCurrentSelectedIndex = -1;
@@ -124,8 +124,7 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
         }
 
         inputHolder.mCardIcon.setContentDescription(loyaltyCard.store);
-        Utils.setIconOrTextWithBackground(mContext, loyaltyCard, icon, inputHolder.mCardIcon, inputHolder.mCardText);
-        inputHolder.setIconBackgroundColor(Utils.getHeaderColor(mContext, loyaltyCard));
+        inputHolder.mIconBackgroundColor = Utils.setIconOrTextWithBackground(mContext, loyaltyCard, icon, inputHolder.mCardIcon, inputHolder.mCardText);
 
         inputHolder.toggleCardStateIcon(loyaltyCard.starStatus != 0, loyaltyCard.archiveStatus != 0, itemSelected(inputCursor.getPosition()));
 
@@ -329,11 +328,6 @@ public class LoyaltyCardCursorAdapter extends BaseCursorAdapter<LoyaltyCardCurso
             mStarBackground.invalidate();
             mArchivedBackground.invalidate();
 
-        }
-
-        public void setIconBackgroundColor(int color) {
-            mIconBackgroundColor = color;
-            mCardIcon.setBackgroundColor(color);
         }
     }
 

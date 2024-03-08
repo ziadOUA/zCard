@@ -18,7 +18,7 @@
     <string name="sendLabel">Отправить…</string>
     <string name="editCardTitle">Изменить карту</string>
     <string name="addCardTitle">Добавить карту</string>
-    <string name="scanCardBarcode">Отсканируйте штрих-код</string>
+    <string name="scanCardBarcode">Сканировать штрих-код</string>
     <string name="cardShortcut">Ярлык карты</string>
     <string name="noCardsMessage">Сначала добавьте карту</string>
     <string name="noCardExistsError">Карта не найдена</string>
@@ -253,7 +253,7 @@
     <string name="currentBalanceSentence">Текущий баланс: <xliff:g>%s</xliff:g></string>
     <string name="cameraPermissionDeniedTitle">Камера недоступна</string>
     <string name="updateBalanceHint">Введите сумму</string>
-    <string name="updateBalanceTitle">Какое изменение\?</string>
+    <string name="updateBalanceTitle">Сколько потрачено или получено?</string>
     <string name="importCards">Импорт карт</string>
     <string name="storageReadPermissionRequired">Для этого действия необходимо разрешение на чтение хранилища…</string>
     <string name="cameraPermissionRequired">Для этого действия необходимо разрешение на доступ к камере…</string>
@@ -299,4 +299,10 @@
     <string name="field_must_not_be_empty">Поле не может быть пустым</string>
     <string name="app_name">Catima</string>
     <string name="settings_follow_sensor_orientation">Всегда поворачивать (игнорировать системные настройки)</string>
+    <string name="add_manually_warning_title">Рекомендуется сканирование</string>
+    <string name="continue_">Продолжить</string>
+    <string name="add_manually_warning_message">В некоторых магазинах значение штрих-кода отличается от написанного на карте номера, из-за чего введение штрих-кода вручную не всегда работает. Вместо этого настоятельно рекомендуется отсканировать штрих-код камерой. Продолжить?</string>
+    <string name="spend">Потрачено</string>
+    <string name="receive">Получено</string>
+    <string name="amountParsingFailed">Недопустимая сумма</string>
 </resources>

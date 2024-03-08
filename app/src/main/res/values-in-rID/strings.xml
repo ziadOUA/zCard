@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="storeName">Nama</string>
     <string name="note">Keterangan</string>
     <string name="delete">Hapus</string>
@@ -232,7 +232,7 @@
     <string name="updateBalance">Perbarui saldo</string>
     <string name="updateBalanceHint">Masukkan jumlah</string>
     <string name="currentBalanceSentence">Saldo saat ini: <xliff:g>%s</xliff:g></string>
-    <string name="updateBalanceTitle">Berapa banyak yang telah kamu habiskan \?</string>
+    <string name="updateBalanceTitle">Berapa banyak yang telah kamu habiskan ?</string>
     <string name="noCameraPermissionDirectToSystemSetting">Untuk memindai barcode, Catima membutuhkan akses ke kamera mu. Tap disini untuk mengganti pengaturan perizinan mu.</string>
     <string name="cameraPermissionRequired">Berikan izin untuk mengakses kamera anda…</string>
     <string name="storageReadPermissionRequired">Berikan izin untuk membaca penyimpanan anda…</string>

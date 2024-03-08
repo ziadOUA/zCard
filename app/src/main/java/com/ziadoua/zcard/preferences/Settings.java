@@ -3,14 +3,14 @@ package com.ziadoua.zcard.preferences;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import java.util.Locale;
-
 import androidx.annotation.IntegerRes;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.PreferenceManager;
 import com.ziadoua.zcard.R;
 import com.ziadoua.zcard.Utils;
+
+import java.util.Locale;
 
 public class Settings {
     private final Context mContext;

@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.28.0 - 133 (2024-03-08)
+
+- Target Android 14
+- Open card icon in gallery on touch
+- Improve design of Photos tab in edit view
+- Update spending screen to also support receiving
+
 ## v2.27.0 - 132 (2024-01-30)
 
 - Refine "Add card" workflow

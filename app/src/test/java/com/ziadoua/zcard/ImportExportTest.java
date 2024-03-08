@@ -1,5 +1,11 @@
 package com.ziadoua.zcard;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.robolectric.Shadows.shadowOf;
+
 import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -44,12 +50,6 @@ import com.ziadoua.zcard.importexport.ImportExportResult;
 import com.ziadoua.zcard.importexport.ImportExportResultType;
 import com.ziadoua.zcard.importexport.MultiFormatExporter;
 import com.ziadoua.zcard.importexport.MultiFormatImporter;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 public class ImportExportTest {
